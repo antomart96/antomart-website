@@ -1,0 +1,59 @@
+// GENERAL CSS FOR ALL PAGES 
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+$color-black: #191919;
+$color-black-light: #3C3C3C;
+$color-yellow:  #FFCC00;
+$color-grey-light: #C2C2C2;
+$color-grey: #585858;
+$color-white: #FFFFFF;
+$color-dark-yellow:  #FF9900;
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+        //body background
+body{ 
+    background-color: $color-grey; //for browser who don't take the gradient effect
+    background-image: linear-gradient(to top right, $color-black 20%, $color-white 90%); // pour avoir un fond de qui se déteint
+    background-repeat: no-repeat;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+        // Button principale sur toutes les pages
+.mainSection{
+    color: $color-black-light;
+    background-color: $color-white;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+    //taille générrale pour toutes les images 
+img{
+    width: 100%;
+}
+
+ // Button principale sur toutes les pages
+ .Button{
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    color: $color-grey;
+    background-color: $color-yellow;
+    padding: 15px 30px;
+    border-radius: 30px;
+    transition: 0.4s;
+    display: inline-block; // fait marcher le tranform dans :hover , mais pq ???
+}
+.Button:hover{
+    background-color: $color-dark-yellow;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.2);
+    transform: translate(5px, -5px);
+}

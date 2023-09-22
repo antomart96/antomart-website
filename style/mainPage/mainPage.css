@@ -1,0 +1,19 @@
+.mainSection article {
+  padding: 60px 0px 60px 30px;
+}
+.mainSection article h1 {
+  font-size: 45px;
+  padding-right: 20%;
+}
+.mainSection article h2 {
+  font-size: 30px;
+}
+.mainSection article p {
+  padding: 35px 10px;
+}
+
+@media screen and (min-width: 720px) {
+  header, footer, main section {
+    display: flex;
+  }
+}/*# sourceMappingURL=mainPage.css.map */

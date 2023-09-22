@@ -1,0 +1,28 @@
+            //MOBILE
+.mainSection{
+    article{
+            padding: 60px 0px 60px 30px;
+            h1{
+                font-size: 45px;
+                padding-right: 20%;
+            }
+            h2{
+                font-size: 30px;
+            }
+
+        p{
+            padding: 35px 10px;
+        }
+    }
+}
+
+             //TABLET
+@media screen and (min-width:720px) {
+    header,footer, main section{
+        display: flex;
+    } 
+}
+            //DESKTOP
+ @media screen and (min-width:1080px) {
+  
+}

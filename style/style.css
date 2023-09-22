@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #585858;
+  background-image: linear-gradient(to top right, #191919 20%, #FFFFFF 90%);
+  background-repeat: no-repeat;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.mainSection {
+  color: #3C3C3C;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+img {
+  width: 100%;
+}
+
+.Button {
+  font-weight: bold;
+  font-size: 25px;
+  text-decoration: none;
+  color: #585858;
+  background-color: #FFCC00;
+  padding: 15px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+  display: inline-block;
+}
+
+.Button:hover {
+  background-color: #FF9900;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
+  transform: translate(5px, -5px);
+}/*# sourceMappingURL=style.css.map */

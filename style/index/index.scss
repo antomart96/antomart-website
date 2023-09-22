@@ -1,0 +1,70 @@
+
+$color-black: #191919;
+$color-black-light: #3C3C3C;
+$color-yellow:  #FFCC00;
+$color-grey-light: #C2C2C2;
+$color-grey: #585858;
+$color-white: #FFFFFF;
+$color-dark-yellow:  #ff9900;
+
+        //MOBILE
+// Center of the cards
+.mainSection{
+    text-align: center;
+    h1{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        font-size: 50px;
+    }
+    p{
+        padding-bottom: 40px;
+        font-size: 25px;
+    }
+    hr{
+        margin: 40px 50px;
+        border: 1px solid $color-grey-light;
+    } 
+// social media image en bas 
+    nav{
+        ul{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 40px;
+            gap: 20px;
+            a{ // social media link 
+                font-size: 25px;
+                border: solid 1px $color-grey;
+                color: $color-black-light;
+                padding: 16px 0;
+                display: inline-block;
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                transition: 0.4s;
+            }
+            a:hover{
+                border: solid 1px $color-dark-yellow;
+                color: $color-dark-yellow;
+                box-shadow: 0 0 10px 10px rgba(0,0,0,0.2);
+                transform: translate(5px, -5px);
+            }
+        }
+    }
+    img{
+        border-radius: 10px 10px 0px 0px;
+    }
+}
+              //TABLET
+@media screen and (min-width:720px) {
+    .mainSection{
+        margin: 100px auto 180px auto;
+        max-width: 600px;
+    }
+}
+                //DESKTOP
+@media screen and (min-width:1080px) {
+    .mainSection{
+        margin: 100px auto 180px auto;
+        max-width: 450px;
+    }
+}
