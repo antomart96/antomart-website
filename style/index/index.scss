@@ -24,32 +24,6 @@ $color-dark-yellow:  #ff9900;
         margin: 40px 50px;
         border: 1px solid $color-grey-light;
     } 
-// social media image en bas 
-    nav{
-        ul{
-            display: flex;
-            justify-content: center;
-            padding-bottom: 40px;
-            gap: 20px;
-            a{ // social media link 
-                font-size: 25px;
-                border: solid 1px $color-grey;
-                color: $color-black-light;
-                padding: 16px 0;
-                display: inline-block;
-                border-radius: 50%;
-                width: 60px;
-                height: 60px;
-                transition: 0.4s;
-            }
-            a:hover{
-                border: solid 1px $color-dark-yellow;
-                color: $color-dark-yellow;
-                box-shadow: 0 0 10px 10px rgba(0,0,0,0.2);
-                transform: translate(5px, -5px);
-            }
-        }
-    }
     img{
         border-radius: 10px 10px 0px 0px;
     }

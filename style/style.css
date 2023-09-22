@@ -46,4 +46,28 @@ img {
   background-color: #FF9900;
   box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
   transform: translate(5px, -5px);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+  gap: 20px;
+}
+nav ul a {
+  font-size: 25px;
+  border: solid 1px #585858;
+  color: #3C3C3C;
+  padding: 16px 0;
+  display: inline-block;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  transition: 0.4s;
+}
+nav ul a:hover {
+  border: solid 1px #FF9900;
+  color: #FF9900;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+  transform: translate(5px, -5px);
 }/*# sourceMappingURL=style.css.map */

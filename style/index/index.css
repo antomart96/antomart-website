@@ -14,29 +14,6 @@
   margin: 40px 50px;
   border: 1px solid #C2C2C2;
 }
-.mainSection nav ul {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 40px;
-  gap: 20px;
-}
-.mainSection nav ul a {
-  font-size: 25px;
-  border: solid 1px #585858;
-  color: #3C3C3C;
-  padding: 16px 0;
-  display: inline-block;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  transition: 0.4s;
-}
-.mainSection nav ul a:hover {
-  border: solid 1px #ff9900;
-  color: #ff9900;
-  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
-  transform: translate(5px, -5px);
-}
 .mainSection img {
   border-radius: 10px 10px 0px 0px;
 }

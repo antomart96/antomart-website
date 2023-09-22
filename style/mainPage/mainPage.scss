@@ -4,16 +4,21 @@
             padding: 60px 0px 60px 30px;
             h1{
                 font-size: 45px;
-                padding-right: 20%;
             }
             h2{
                 font-size: 30px;
             }
+            h1,H2{
+                padding-right: 20%;
+            }
 
         p{
-            padding: 35px 10px;
+            padding: 30px 10px;
         }
     }
+}
+footer{
+    text-align: center;
 }
 
              //TABLET
