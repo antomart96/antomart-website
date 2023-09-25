@@ -64,6 +64,7 @@ nav ul a {
   width: 60px;
   height: 60px;
   transition: 0.4s;
+  line-height: 1;
 }
 nav ul a:hover {
   border: solid 1px #FF9900;
