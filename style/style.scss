@@ -1,10 +1,9 @@
-// GENERAL CSS FOR ALL PAGES 
+            // GENERAL CSS FOR ALL PAGES 
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
 $color-black: #191919;
 $color-black-light: #3C3C3C;
 $color-yellow:  #FFCC00;
@@ -12,58 +11,54 @@ $color-grey-light: #C2C2C2;
 $color-grey: #585858;
 $color-white: #FFFFFF;
 $color-dark-yellow:  #FF9900;
-
-ul{
+ul{         //Suppression des points de liste
     list-style: none;
 }
-
-a{
+a{          //Suppression des lignes de lien 
     text-decoration: none;
 }
-        //body background
-body{ 
+            
+body{       //body background
     background-color: $color-grey; //for browser who don't take the gradient effect
-    background-image: linear-gradient(to top right, $color-black 20%, $color-white 90%); // pour avoir un fond de qui se déteint
+    background: linear-gradient(to top right, $color-black 0%, $color-white 100%); // pour avoir un fond de qui se déteint
     background-repeat: no-repeat;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-        // Button principale sur toutes les pages
-.mainSection{
+    background-size: cover;
+    background-position: center;
+    font-family: 'Montserrat', sans-serif;
+}     
+.mainSection{ // Button principale sur toutes les pages
     color: $color-black-light;
     background-color: $color-white;
     border-radius: 10px;
     opacity: 0.9;
-}
-    //taille générrale pour toutes les images 
-img{
+    box-shadow:  6px 6px 12px #5a5a5a, -6px -6px 12px #ffffff;
+    overflow: hidden;
+}       
+img{        //taille générrale pour toutes les images 
     width: 100%;
-}
-
- // Button principale sur toutes les pages
- .Button{
+}     
+.Button{    // Button principale sur toutes les pages
     font-weight: bold;
     font-size: 25px;
     text-decoration: none;
     color: $color-grey;
-    background-color: $color-yellow;
     padding: 15px 30px;
-    border-radius: 30px;
     transition: 0.4s;
-    display: inline-block; // fait marcher le tranform dans :hover , mais pq ???
+    display: inline-block; // fait marcher le tranform dans :hover , mais pq ??? pcq button et autre fonction sont en iline par default et donc ça empêche le transform.
+    border-radius: 50px;
+    background-color: #dae2f1;
+    box-shadow:  6px 6px 8px #838891,-6px -6px 8px #c5e0ff;
 }
 .Button:hover{
-    background-color: $color-dark-yellow;
-    box-shadow: 0 0 20px 10px rgba(0,0,0,0.2);
-    transform: translate(5px, -5px);
-}
-
-// social media image en bas 
-nav{
+    background-color: #edf5ff;
+    box-shadow: 0 0 10px 5px #00000033;
+    transform: translate(-5px, -5px);
+}      
+nav{        // social media image en bas 
     ul{
         display: flex;
         justify-content: center;
-        padding-bottom: 40px;
+        padding-bottom: 30px;
         gap: 20px;
         a{ // social media link 
             font-size: 25px;
@@ -75,13 +70,140 @@ nav{
             width: 60px;
             height: 60px;
             transition: 0.4s;
-            line-height: 1;
+            text-align: center;
+            box-shadow:  6px 6px 8px #838891,-6px -6px 8px #edf5ff;
+            transition: transform 0.4s, border 0.4s, color 0.4s, box-shadow 0.4s;
+            
         }
-        a:hover{
-            border: solid 1px $color-dark-yellow;
-            color: $color-dark-yellow;
-            box-shadow: 0 0 10px 10px rgba(0,0,0,0.2);
-            transform: translate(5px, -5px);
+        a:hover{ 
+            border: solid 1px #c1deff ;
+            color:#c1deff;
+            box-shadow: 0 0 10px 5px #00000033;
+            transform: translate(-5px,-5px);
         }
     }
 }
+                            //MEDIA 
+@media screen and (min-width:720px) {       //TABLET
+ 
+}    
+@media screen and (min-width:1080px) {      //DESKTOP
+
+}   
+                        //KEYFRAMES
+body{
+    animation: animationBody 1.5s  ease-in;
+}
+.animationImage{           //annimation Image
+    animation: animationImg 1s ease-in;
+}
+.animationTitle{           //annimation Title
+    animation: animationTitle 2s ease-in;
+}
+.animationText{           //annimation Text
+    animation: animationText  2s ease-in;
+}
+.animationButton{          //annimation Button
+    animation: animationButton 2s ease-in;
+}
+.animationFb{           //annimation Fb
+    animation: animationFb 1s ease-out 0s backwards;
+}
+.animationInsta{           //annimation Insta
+    animation: animationInsta 1s ease-out 0.5s backwards;
+}
+.animationLink{           //annimation Linke
+    animation: animationLink 1s ease-out 1s backwards;
+}
+.animationMail{          //annimation Mail
+    animation: animationMail 1s ease-out 1.5s backwards;
+}
+@keyframes animationBody{           //annimation Image 
+    0%{
+        background: #191919;
+    }
+    100%{
+        background: linear-gradient(to top right, $color-black 0%, $color-white 100%);
+    }
+}
+@keyframes animationImg{           //annimation Image 
+    from{
+        transform:scale(1.07, 1.07);
+        opacity: 0.75;
+    }
+    to{
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+} 
+@keyframes animationTitle{           //annimation Title  
+    from{
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}                     
+@keyframes animationText{           //annimation Text
+    from{
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}       
+@keyframes animationButton{           //annimation Button
+    from{
+        transform: translateY(15px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}                     
+@keyframes animationFb{           //annimation Fb
+    from{
+        transform: translateY(15px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}   
+@keyframes animationInsta{           //annimation Insta
+    from{
+        transform: translateY(15px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}   
+@keyframes animationLink{           //annimation Linke
+    from{
+        transform: translateY(15px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}   
+@keyframes animationMail{           //annimation Mail
+    from{
+        transform: translateY(15px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}   

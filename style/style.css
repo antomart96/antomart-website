@@ -14,9 +14,11 @@ a {
 
 body {
   background-color: #585858;
-  background-image: linear-gradient(to top right, #191919 20%, #FFFFFF 90%);
+  background: linear-gradient(to top right, #191919 0%, #FFFFFF 100%);
   background-repeat: no-repeat;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-size: cover;
+  background-position: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 .mainSection {
@@ -24,6 +26,8 @@ body {
   background-color: #FFFFFF;
   border-radius: 10px;
   opacity: 0.9;
+  box-shadow: 6px 6px 12px #5a5a5a, -6px -6px 12px #ffffff;
+  overflow: hidden;
 }
 
 img {
@@ -35,23 +39,24 @@ img {
   font-size: 25px;
   text-decoration: none;
   color: #585858;
-  background-color: #FFCC00;
   padding: 15px 30px;
-  border-radius: 30px;
   transition: 0.4s;
   display: inline-block;
+  border-radius: 50px;
+  background-color: #dae2f1;
+  box-shadow: 6px 6px 8px #838891, -6px -6px 8px #c5e0ff;
 }
 
 .Button:hover {
-  background-color: #FF9900;
-  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
-  transform: translate(5px, -5px);
+  background-color: #edf5ff;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+  transform: translate(-5px, -5px);
 }
 
 nav ul {
   display: flex;
   justify-content: center;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   gap: 20px;
 }
 nav ul a {
@@ -64,11 +69,138 @@ nav ul a {
   width: 60px;
   height: 60px;
   transition: 0.4s;
-  line-height: 1;
+  text-align: center;
+  box-shadow: 6px 6px 8px #838891, -6px -6px 8px #edf5ff;
+  transition: transform 0.4s, border 0.4s, color 0.4s, box-shadow 0.4s;
 }
 nav ul a:hover {
-  border: solid 1px #FF9900;
-  color: #FF9900;
-  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
-  transform: translate(5px, -5px);
+  border: solid 1px #c1deff;
+  color: #c1deff;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+  transform: translate(-5px, -5px);
+}
+
+body {
+  animation: animationBody 1.5s ease-in;
+}
+
+.animationImage {
+  animation: animationImg 1s ease-in;
+}
+
+.animationTitle {
+  animation: animationTitle 2s ease-in;
+}
+
+.animationText {
+  animation: animationText 2s ease-in;
+}
+
+.animationButton {
+  animation: animationButton 2s ease-in;
+}
+
+.animationFb {
+  animation: animationFb 1s ease-out 0s backwards;
+}
+
+.animationInsta {
+  animation: animationInsta 1s ease-out 0.5s backwards;
+}
+
+.animationLink {
+  animation: animationLink 1s ease-out 1s backwards;
+}
+
+.animationMail {
+  animation: animationMail 1s ease-out 1.5s backwards;
+}
+
+@keyframes animationBody {
+  0% {
+    background: #191919;
+  }
+  100% {
+    background: linear-gradient(to top right, #191919 0%, #FFFFFF 100%);
+  }
+}
+@keyframes animationImg {
+  from {
+    transform: scale(1.07, 1.07);
+    opacity: 0.75;
+  }
+  to {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+@keyframes animationTitle {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes animationText {
+  from {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes animationButton {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes animationFb {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes animationInsta {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes animationLink {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes animationMail {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */
