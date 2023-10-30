@@ -1,0 +1,177 @@
+            //MOBILE            
+$color-black: #191919;
+$color-black-light: #3C3C3C;
+$color-yellow:  #FFCC00;
+$color-grey-light: #C2C2C2;
+$color-grey: #585858;
+$color-white: #FFFFFF;
+$color-dark-yellow:  #FF9900;
+.imgRotation{
+    display: none;
+}
+header, section{
+    overflow: hidden;
+}
+.mainSection{
+    height: 100vh;
+    overflow: auto;
+    position: relative;
+    margin-bottom: 100px;
+    h2{
+        font-size: 30px;
+        text-align: center;
+        padding-bottom: 50px;
+        padding-top: 20px;
+    }
+    .mediaSize{
+        height: 330px;
+    }
+    article{
+        padding:30px 20px;
+        h1{
+            text-align: center;
+            font-size: 40px;
+        }
+        p{
+            padding-top: 30px;
+            font-size: 20px;
+        }
+        a{
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+    hr{
+        border: 2px solid $color-grey-light;
+        margin: 40px 30%;
+    }
+}
+footer{         
+    background-color: $color-white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -10px 50px 20px $color-white;  
+    nav{
+        padding-top: 25px;
+        a{
+            box-shadow:  5px 5px 10px #edf5ff,-5px -5px 10px #00000033;            
+        }
+        a:hover{
+            box-shadow: 0 0 10px 5px  #838891;
+        }
+    }
+}
+                //MEDIA 
+ @media screen and (min-width:720px) {       //TABLET   
+    #profileImage{
+        display: none;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 0px;
+        background: #000;
+    }
+    .imgRotation{           //animation 3D rotation with images 
+        display: block;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        transform-style: preserve-3d;
+        animation: animate 25s linear infinite;
+        span{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-origin: center;
+            transform-style: preserve-3d;
+            transform: rotateY(calc(var(--imageRotation)* 45deg)) translateZ(400px);
+            img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+        }
+    }
+    @keyframes animate{
+        0%{
+            transform: perspective(1000px) rotateY(0deg);
+        }
+        100%{
+            transform: perspective(1000px) rotateY(360deg);
+        }
+    }
+    .mainSection{
+        height: auto;
+        margin: 100px auto 10px auto;
+        max-width: 650px;
+        h2{
+            padding-bottom: 20px;
+        }
+        h1{
+          padding: 30px 0px;
+        }
+        article{
+            p{
+                padding: 0px 40px;
+            }
+
+        }
+        .imgDiv{
+            margin: 30px 60px;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 350px;
+            img{
+                height: 100%;
+            }
+            
+        }
+        main{
+            margin-bottom: 50px;
+        }   
+    }
+    footer{
+        background-color: transparent;
+        position: initial;
+        box-shadow: none;
+        nav{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            a{
+                background-color: $color-white;
+            }
+        }
+    }
+}    
+ @media screen and (min-width:1080px) {      //DESKTOP                          
+    .mainSection{
+        max-width: 1080px;
+        hr{
+            margin: 70px 30%;
+        }
+        section{
+            display: flex;
+            .imgDiv{
+                width: 40%;
+                margin: 30px 60px 0px 60px;
+                height: 370px;
+            }
+            article{
+                width: 60%;
+            }
+        }
+        .flexRevers{
+            flex-direction: row-reverse;
+        }
+    }
+}   

@@ -3,9 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Font Awesome (free icon to use and change color)-->
+    <script src="https://kit.fontawesome.com/9823a17fbf.js" crossorigin="anonymous"></script> 
+    <!-- Css link -->
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/cvFr/cv.css">
+        <!-- TITLE OF THE PAGE -->
+    <title>Antoine Martin Fr</title>
 </head>
 <body>
-    
+    <button onclick="window.print();">Télécharger en PDF</button>
+    <page size="A4" id="a4">    
+        <!-- Left -->
+        <aside>
+            <div id="profilImg">
+                <img src="../images/photoProfil.jpg" alt="">
+            </div>
+            <section id="asideSection-1">
+                <h2>Contact</h2>
+                <hr>
+                <div>
+                    <h3>Adresse</h3>
+                    <p>84 rue de clairefontaine L-8460 Eischen</p>
+                </div>
+                <div>
+                    <h3>Numéro de téléphone</h3>
+                    <p><a href="tel:+352661422716">(+352) 661 422 716</a></p>
+                </div>
+                <div>
+                    <h3>Adresse e-mail</h3>
+                    <p><a href="mailto:martinanto96@hotmail.fr" target="_blank">martinanto96@hotmail.fr</a></p>
+                </div>
+                <div>
+                    <h3>Site Web</h3>
+                    <p><a href="https://antomart-website.netlify.app/" target="_blank">antomart-website.netlify.app</a></p>
+                </div>
+                <div>
+                    <h3>GitHub</h3>
+                    <p><a href="https://github.com/antomart96" target="_blank">github.com/antomart96</a></p>
+                </div>
+                <div>
+                    <h3>Linkedin</h3>
+                    <p><a href="https://www.linkedin.com/in/antomart" target="_blank">linkedin.com/in/antomart</a></p>
+                </div>
+                <!-- <h2>Compétences</h2>
+                <hr>
+                <div>
+                    <h3>Travail en équipe</h3>
+                </div>
+                <div>
+                    <h3>Office 365 (Word, Excel et PowerPoint)</h3>
+                </div> -->
+                <h2>Langues</h2>
+                <hr>
+                <div class="langue">
+                    <h3>Français</h3>
+                    <p>Langue maternelle</p>
+                </div>
+                <div class="langue">
+                    <h3>Anglais</h3>
+                    <p>B2</p>
+                </div>
+                <div class="langue">
+                    <h3>Allemand</h3>
+                    <p>B1</p>
+                </div>
+                <div class="langue">
+                    <h3>Luxembourgeois</h3>
+                    <p>A2</p>
+                </div>
+                <h2>Loisir</h2>
+                <hr>
+                <div>
+                    <h3>Escalade</h3>
+                </div>
+            </section>
+        </aside>
+                    <!-- Right -->
+        <main>
+            <header>
+                <h1>MARTIN Antoine</h1>
+                <p>Junior Full Stack Web Developpeur</p>
+            </header>
+            <section  id="mainSection">
+                <article>                       <!-- À propos de moi -->
+                    <h2>À propos de moi</h2>
+                    <hr>
+                    <p>
+                        Je suis actuellement en <strong>cours du soir</strong> en <strong>informatique de gestion</strong>. 
+                        Je suis également une formation de <strong>Junior Full stack developpeur</strong> intensive de 4 mois qui se termine mi-décembre. 
+                        Je souhaite acquérir de l'expérience dans le monde du travail dans le milieu informatique.</p>
+                </article>
+                <article>                           <!-- Expérience professionnelle -->
+                    <h2>Expérience professionnelle</h2>
+                    <hr>
+                    <div>
+                        <p class="date">28/08/2023 - 15/12/2023</p>
+                        <article>
+                            <h4>Full stack web developpeur</h4>
+                            <p><em>Cap4Lab & ADEM</em></p>
+                            <p>
+                                Formation intensive de 4 mois. Exploration de la conception UI/UX avec Figma/Adobe XD. 
+                                Développement de compétences en <strong>Front-End</strong>: HTML5, CSS3, SASS/SCSS, JavaScript/jQuery, React/Angular/Vue.js, Cordova, React Native.
+                                Développement de compétences en <strong>Back-End</strong>: MySQL, PHP, Laravel.
+                            </p>
+                         </article>
+                    </div>
+                   <div>
+                        <p class="date">juil. 2019</p>
+                        <article>
+                            <h4>Aide Etalagiste</h4>
+                            <p><em>Pall Center Exploitation S.A, Oberpallen</em></p>
+                            <p>Aide logistique : inventaires et organisation du rayon, gestion complète des commandes (en équipe et autonome)</p>
+                        </article>
+                   </div>
+                </article>
+                <article>                               <!-- Formation scolaire et Qualifications -->
+                    <h2>Etudes</h2>
+                    <hr>
+                    <div>
+                        <p class="date">2018 - présent</p>
+                        <article>
+                            <h4>Bachelier en informatique de gestion</h4>
+                            <p><em>EAFC Sud-Luxembourg (Établissement d'Enseignement pour Adultes et de Formation Continue), Arlon</em></p>
+                         </article>
+                     </div>
+                    <div>
+                        <p class="date">2017 - 2018</p>
+                        <article>
+                            <h4>Bachelier en sciences informatiques</h4>
+                            <p><em>UCL (Université catholique de Louvain), Louvain-la-Neuve</em></p>
+                        </article>
+                    </div>
+                    <div>
+                        <p class="date">2015 - 2017</p>
+                        <article>
+                            <h4>Bachelier en sciences mathématiques</h4>
+                            <p><em>UCL (Université catholique de Louvain), Louvain-la-Neuve</em></p>
+                        </article>
+                    </div>
+                </article>
+                <article>                            <!-- Projet personnel-->
+                    <h2>Projet personnel</h2>
+                    <hr>
+                    <section class="sillSection" >
+                        <h3>Front-end</h3>
+                        <article class="skillArticle">
+                            <div class="skillDiv" >
+                                <h4>Mon Site</h4>
+                                <p>github.com/antomart96/monPropreSite</p>  
+                            </div>
+                            <p>
+                                <em>Après un mois et demi d'apprentissage, j'ai réussi à créer mon propre site web, 
+                                conçu pour s'adapter à divers appareil mulitmédias, 
+                                en utilisant <strong>HTML</strong>, <strong>SCSS</strong> et <strong>JavaScript</strong>.</em>
+                            </p>
+                        </article>
+                        <article class="skillArticle">
+                            <div class="skillDiv" >
+                                <h4>Dreamshare</h4>
+                                <p>fristproj-ma.netlify.app</p>  
+                            </div>
+                            <p><em>Site web responsive, utilisant <strong>HTML</strong> & <strong>SCSS</strong> à travers divers appareils multimédias, incluant une validation d'un formulaire et une galerie dynamqique alimentée par une <strong>API</strong>, le tout grâce <strong>JavaScript</strong>.  </em></p>
+                        </article>
+                    </section>
+                    <section class="sillSection">
+                        <h3>Back-end</h3>
+                    </section>
+                </article>
+            </section>
+        </main>
+    </page>
 </body>
 </html>

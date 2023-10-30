@@ -1,0 +1,169 @@
+.imgRotation {
+  display: none;
+}
+
+header, section {
+  overflow: hidden;
+}
+
+.mainSection {
+  height: 100vh;
+  overflow: auto;
+  position: relative;
+  margin-bottom: 100px;
+}
+.mainSection h2 {
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+.mainSection .mediaSize {
+  height: 330px;
+}
+.mainSection article {
+  padding: 30px 20px;
+}
+.mainSection article h1 {
+  text-align: center;
+  font-size: 40px;
+}
+.mainSection article p {
+  padding-top: 30px;
+  font-size: 20px;
+}
+.mainSection article a {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+.mainSection hr {
+  border: 2px solid #C2C2C2;
+  margin: 40px 30%;
+}
+
+footer {
+  background-color: #FFFFFF;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0px -10px 50px 20px #FFFFFF;
+}
+footer nav {
+  padding-top: 25px;
+}
+footer nav a {
+  box-shadow: 5px 5px 10px #edf5ff, -5px -5px 10px rgba(0, 0, 0, 0.2);
+}
+footer nav a:hover {
+  box-shadow: 0 0 10px 5px #838891;
+}
+
+@media screen and (min-width: 720px) {
+  #profileImage {
+    display: none;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+    background: #000;
+  }
+  .imgRotation {
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: animate 25s linear infinite;
+  }
+  .imgRotation span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--imageRotation) * 45deg)) translateZ(400px);
+  }
+  .imgRotation span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+  }
+  @keyframes animate {
+    0% {
+      transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+      transform: perspective(1000px) rotateY(360deg);
+    }
+  }
+  .mainSection {
+    height: auto;
+    margin: 100px auto 10px auto;
+    max-width: 650px;
+  }
+  .mainSection h2 {
+    padding-bottom: 20px;
+  }
+  .mainSection h1 {
+    padding: 30px 0px;
+  }
+  .mainSection article p {
+    padding: 0px 40px;
+  }
+  .mainSection .imgDiv {
+    margin: 30px 60px;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 350px;
+  }
+  .mainSection .imgDiv img {
+    height: 100%;
+  }
+  .mainSection main {
+    margin-bottom: 50px;
+  }
+  footer {
+    background-color: transparent;
+    position: initial;
+    box-shadow: none;
+  }
+  footer nav {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  footer nav a {
+    background-color: #FFFFFF;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .mainSection {
+    max-width: 1080px;
+  }
+  .mainSection hr {
+    margin: 70px 30%;
+  }
+  .mainSection section {
+    display: flex;
+  }
+  .mainSection section .imgDiv {
+    width: 40%;
+    margin: 30px 60px 0px 60px;
+    height: 370px;
+  }
+  .mainSection section article {
+    width: 60%;
+  }
+  .mainSection .flexRevers {
+    flex-direction: row-reverse;
+  }
+}/*# sourceMappingURL=aboutme.css.map */

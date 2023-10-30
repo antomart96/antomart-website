@@ -1,6 +1,4 @@
-            //MOBILE
-
-            
+            //MOBILE            
 $color-black: #191919;
 $color-black-light: #3C3C3C;
 $color-yellow:  #FFCC00;
@@ -8,13 +6,12 @@ $color-grey-light: #C2C2C2;
 $color-grey: #585858;
 $color-white: #FFFFFF;
 $color-dark-yellow:  #FF9900;
-
-header{
+header, section{
     overflow: hidden;
 }
 .mainSection{
     height: 100vh;
-    overflow: auto;
+    overflow: auto; 
     position: relative;
     margin-bottom: 100px;
     article{
@@ -36,21 +33,29 @@ header{
             margin-top: 20px;
         }
     }
- 
+    hr{
+        border: 2px solid $color-grey-light;
+        margin: 40px 30%;
+    }
 }
-footer{
+footer{         
     background-color: $color-white;
     position: fixed;
     bottom: 0;
     width: 100%;
     box-shadow: 0px -10px 50px 20px $color-white;  
     nav{
-        padding-top: 20px;
+        padding-top: 25px;
+        a{
+            box-shadow:  5px 5px 10px #edf5ff,-5px -5px 10px #00000033;            
+        }
+        a:hover{
+            box-shadow: 0 0 10px 5px  #838891;
+        }
     }
 }
-
-             //TABLET
-@media screen and (min-width:720px) {
+                            //MEDIA         
+@media screen and (min-width:720px) {       //TABLET
     header, main section{
         display: flex;
     }
@@ -58,21 +63,35 @@ footer{
         height: auto;
         margin: 100px auto 10px auto;
         max-width: 650px;
-        img{
-            width: 50%;
-            padding: 60px 30px;
-
-        }
-        .flexFevers{
+        .flexRevers{
             flex-direction: row-reverse;
         }
+        .imgDiv{
+            border-radius: 10px;
+            width: 40%;
+            overflow: hidden;
+            margin: 60px 30px 21% 30px;
+            img{
+                height: 100%;
+            }
+        }
+        .calibration{
+            margin-bottom: 34%;
+        }
         article{
-            padding:60px 30px 60px 40px;
+            width: 60%;
+            padding: 60px 20px 60px 20px;
+            text-align: center;
+            h1, h2, p{
+                text-align: left;
+            }
             a{
                 width: auto;
             }
         } 
-
+        .cvEN{
+            padding: 15px 40px;
+        }
     }
     footer{
         background-color: transparent;
@@ -87,12 +106,17 @@ footer{
         }
     }
 }
-            //DESKTOP   
- @media screen and (min-width:1080px) {
+ @media screen and (min-width:1080px) {     //DESKTOP   
     .mainSection{
-        max-width: 1050px;
-        article{
-            padding: 120px 80px;
+        max-width: 1080px;
+        .imgDiv{
+            margin: 120px 50px 11% 50px;
         }
+        article{
+            width: 50%;
+            padding: 120px 50px;
+        }
+     
+
     }
 }

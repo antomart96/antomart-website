@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+$color-black: #191919;
+$color-black-light: #3C3C3C;
+$color-yellow:  #FFCC00;
+$color-grey-light: #C2C2C2;
+$color-grey: #585858;
+$color-white: #FFFFFF;
+$color-dark-yellow:  #FF9900;
+    //Pour mettre en A4
+body {
+    background: #cccccc; 
+    font-family: 'Roboto', sans-serif;
+    color: #432A16;
+}
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm #00000080;
+  display: flex;
+}
+page[size="A4"] {  
+  width: 21cm;
+  height: 29.7cm; 
+}
+button{
+    display: block;
+    border: none;
+    text-align: center;
+    margin: 30px  40%;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    color: #666666;
+    padding: 15px 30px;
+    transition: 0.4s;
+    border-radius: 50px;
+    background-color: lightgray;
+    box-shadow: inset -10px -10px 15px #575757,
+        inset -10px -10px 17px #ffffff;
+    cursor: pointer;
+}
+
+aside{              //LEFT
+    width: 35%;
+    height: 100%;
+    background-color: #D9D4CE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #profilImg{
+        overflow: hidden;
+        height: 25%;
+         img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    #asideSection-1{
+        padding:  0px 0px 15px 15px;
+        h2{
+            font-size: 18px;
+            margin-top: 25px;
+        }
+        hr{
+            border: 1px solid #432a162d;
+
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+        div{
+            padding-left: 15px;
+            &.langue{
+                padding-right: 30px;
+                display: flex;
+                justify-content: space-between;
+            }
+            h3{
+                font-size: 12px;
+            }
+            a{
+                font-size: 12px;
+                text-decoration: none;
+                color: #432A16;
+            }
+            p{
+                font-size: 12px;
+                padding-top: 5px;
+                padding-bottom:10px ;
+            }
+        }
+    }
+}
+main{               //Right
+    width: 65%;
+    height: 100%;
+    header{
+        background-color: #cec9c49f;
+        padding: 40px;
+    }
+    #mainSection{
+        padding: 30px;
+        article{
+            margin-bottom: 15px;
+            h2{
+                font-size: 18px;
+            }
+            hr{
+                margin: 15px 0px;
+                border: 1px solid #432a162d;
+            }
+            p{
+                font-size: 12px;
+            }
+            div{
+                display: flex;
+
+                .date{
+                    width: 120px;
+                }
+                article{
+                    width: 100%;
+                    h4{
+                        font-size: 12px;
+                        padding-bottom: 5px;
+                    }
+                }
+            }
+            .skillsPart{
+                display: flex;
+                flex-wrap: wrap;
+                article{
+                    margin: 0;
+                    flex-basis: 50%;
+                    padding: 5px; 
+                }
+            }
+        }
+        .sillSection{
+            h3{
+                font-size: 18px;
+                padding-top: 10px;
+                span{
+                    font-size: 12px;
+                }
+            }
+            .skillArticle{
+                margin-bottom: 0;
+                padding: 10px 0 10px 20px;
+                h4{
+                    font-size: 14px;
+                }
+            }
+            .skillDiv{
+                gap: 20px;
+                margin-bottom: 5px;
+            }
+            
+        }
+    }
+}
+
+@media print{
+    button{
+        display: none;
+     }
+}

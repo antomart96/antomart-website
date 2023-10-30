@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #585858;
   background: linear-gradient(to top right, #191919 0%, #FFFFFF 100%);
@@ -34,7 +38,7 @@ img {
   width: 100%;
 }
 
-.Button {
+.button {
   font-weight: bold;
   font-size: 25px;
   text-decoration: none;
@@ -47,7 +51,7 @@ img {
   box-shadow: 6px 6px 8px #838891, -6px -6px 8px #c5e0ff;
 }
 
-.Button:hover {
+.button:hover {
   background-color: #edf5ff;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
   transform: translate(-5px, -5px);
@@ -70,8 +74,7 @@ nav ul a {
   height: 60px;
   transition: 0.4s;
   text-align: center;
-  box-shadow: 6px 6px 8px #838891, -6px -6px 8px #edf5ff;
-  transition: transform 0.4s, border 0.4s, color 0.4s, box-shadow 0.4s;
+  box-shadow: 5px 5px 10px #838891, -5px -5px 10px #edf5ff;
 }
 nav ul a:hover {
   border: solid 1px #c1deff;
@@ -80,54 +83,81 @@ nav ul a:hover {
   transform: translate(-5px, -5px);
 }
 
-body {
-  animation: animationBody 1.5s ease-in;
+#goBack, #goTop {
+  display: none;
 }
 
-.animationImage {
-  animation: animationImg 1s ease-in;
-}
-
-.animationTitle {
-  animation: animationTitle 2s ease-in;
-}
-
-.animationText {
-  animation: animationText 2s ease-in;
-}
-
-.animationButton {
-  animation: animationButton 2s ease-in;
-}
-
-.animationFb {
-  animation: animationFb 1s ease-out 0s backwards;
-}
-
-.animationInsta {
-  animation: animationInsta 1s ease-out 0.5s backwards;
-}
-
-.animationLink {
-  animation: animationLink 1s ease-out 1s backwards;
-}
-
-.animationMail {
-  animation: animationMail 1s ease-out 1.5s backwards;
-}
-
-@keyframes animationBody {
-  0% {
-    background: #191919;
+@media screen and (min-width: 720px) {
+  #goBack, #goTop {
+    padding: 8px 15px;
+    box-shadow: none;
+    position: fixed;
+    right: 15px;
+    z-index: 100;
+    display: inline-block;
   }
-  100% {
-    background: linear-gradient(to top right, #191919 0%, #FFFFFF 100%);
+  #goBack {
+    top: 15px;
+  }
+  #goTop {
+    opacity: 0;
+    bottom: 15px;
+    transition-duration: 1s;
+    transform: scale(0);
+  }
+  #goTop.visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+  #goTop:hover, #goBack:hover {
+    transform: none;
   }
 }
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+
+.active.animationImage {
+  animation: animationImg 1.5s ease-in;
+}
+
+.active.animationTitle {
+  animation: animationTitle 1.5s ease-in;
+}
+
+.active.animationText {
+  animation: animationText 1.5s ease-in;
+}
+
+.active.animationButton {
+  animation: animationButton 1.5s ease-in;
+}
+
+.active.animationGitHub {
+  animation: animationGitHub 1s ease-out 0s backwards;
+}
+
+.active.animationLink {
+  animation: animationLink 1s ease-out 0.5s backwards;
+}
+
+.active.animationMail {
+  animation: animationMail 1s ease-out 1s backwards;
+}
+
+.active.animationHr {
+  animation: animationHr 1.5s ease-in;
+}
+
 @keyframes animationImg {
   from {
     transform: scale(1.07, 1.07);
-    opacity: 0.75;
+    opacity: 0;
   }
   to {
     transform: scale(1, 1);
@@ -146,7 +176,7 @@ body {
 }
 @keyframes animationText {
   from {
-    transform: translateX(-10px);
+    transform: translateX(-20px);
     opacity: 0;
   }
   to {
@@ -164,17 +194,7 @@ body {
     opacity: 1;
   }
 }
-@keyframes animationFb {
-  from {
-    transform: translateY(15px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes animationInsta {
+@keyframes animationGitHub {
   from {
     transform: translateY(15px);
     opacity: 0;
@@ -201,6 +221,14 @@ body {
   }
   to {
     transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes animationHr {
+  0% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
   }
 }/*# sourceMappingURL=style.css.map */

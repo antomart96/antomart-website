@@ -1,4 +1,3 @@
-
 $color-black: #191919;
 $color-black-light: #3C3C3C;
 $color-yellow:  #FFCC00;
@@ -6,19 +5,14 @@ $color-grey-light: #C2C2C2;
 $color-grey: #585858;
 $color-white: #FFFFFF;
 $color-dark-yellow:  #ff9900;
-
         //MOBILE
-
 // Center of the cards
 html{ //permet de bien étendre le background sur tout l'écran 
-    height: 110vh;
+    height: 100vh;
 }
-
-.mainSection{
+.mainSection{   
     margin: 30px 30px 0px 30px;
-    text-align: center;
-
-            
+    text-align: center;            
     h1{
         padding-top: 20px;
         padding-bottom: 20px;
@@ -36,10 +30,8 @@ html{ //permet de bien étendre le background sur tout l'écran
         border-radius: 10px 10px 0px 0px;
     }
 }
-                          //MEDIA
-
-            //TABLET
-@media screen and (min-width:720px) {
+                          //MEDIA 
+@media screen and (min-width:720px) {       //TABLET
     .mainSection{
         margin: 100px auto 180px auto;
         max-width: 600px;
@@ -55,10 +47,126 @@ html{ //permet de bien étendre le background sur tout l'écran
         } 
     }
 }
-            //DESKTOP
-@media screen and (min-width:1080px) {
+@media screen and (min-width:1080px) {      //DESKTOP
     .mainSection{
         margin: 40px auto;
         max-width: 400px;
     }
 }   
+                        //KEYFRAMES
+// body{
+//     animation: animationBody 1.5s  ease-in;
+// }
+.animationImage{           //annimation Image
+    animation: animationImg 1.5s ease-in;
+}
+.animationTitle{           //annimation Title
+    animation: animationTitle 1.5s ease-in;
+}
+.animationText{           //annimation Text
+    animation: animationText  1.5s ease-in;
+}
+.animationButton{          //annimation Button
+    animation: animationButton 1.5s ease-in;
+}
+
+.animationGitHub{           //annimation Insta
+    animation: animationGitHub 1s ease-out 0s backwards;
+}
+.animationLink{           //annimation Linke
+    animation: animationLink 1s ease-out 0.5s backwards;
+}
+.animationMail{          //annimation Mail
+    animation: animationMail 1s ease-out 1s backwards;
+
+}
+.animationHr{           //annimation Image
+    animation: animationHr 1.5s ease-in;
+}
+// @keyframes animationBody{           //annimation Image 
+//     0%{
+//         background: #191919;
+//     }
+//     100%{
+//         background: linear-gradient(to top right, $color-black 0%, $color-white 100%);
+//     }
+// }
+@keyframes animationImg{           //annimation Image 
+    from{
+        transform:scale(1.07, 1.07);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+} 
+@keyframes animationTitle{           //annimation Title  
+    from{
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}                     
+@keyframes animationText{           //annimation Text
+    from{
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}       
+@keyframes animationButton{           //annimation Button
+    from{
+        transform: translateY(15px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}                     
+@keyframes animationGitHub{           //annimation Insta
+    from{
+        transform: translateY(15px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}   
+@keyframes animationLink{           //annimation Linke
+    from{
+        transform: translateY(15px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}   
+@keyframes animationMail{           //annimation Mail
+    from{
+        transform: translateY(15px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+} 
+@keyframes animationHr{           //annimation Hr 
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;   
+    }
+}  

@@ -3,6 +3,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    // border: 1px solid red; //helps to see all the boxes correctly in the page
 }
 $color-black: #191919;
 $color-black-light: #3C3C3C;
@@ -16,8 +17,10 @@ ul{         //Suppression des points de liste
 }
 a{          //Suppression des lignes de lien 
     text-decoration: none;
-}
-            
+}  
+html{       //alloud the scroll animation
+    scroll-behavior: smooth;
+}         
 body{       //body background
     background-color: $color-grey; //for browser who don't take the gradient effect
     background: linear-gradient(to top right, $color-black 0%, $color-white 100%); // pour avoir un fond de qui se déteint
@@ -37,7 +40,7 @@ body{       //body background
 img{        //taille générrale pour toutes les images 
     width: 100%;
 }     
-.Button{    // Button principale sur toutes les pages
+.button{    // Button principale sur toutes les pages
     font-weight: bold;
     font-size: 25px;
     text-decoration: none;
@@ -47,9 +50,9 @@ img{        //taille générrale pour toutes les images
     display: inline-block; // fait marcher le tranform dans :hover , mais pq ??? pcq button et autre fonction sont en iline par default et donc ça empêche le transform.
     border-radius: 50px;
     background-color: #dae2f1;
-    box-shadow:  6px 6px 8px #838891,-6px -6px 8px #c5e0ff;
+    box-shadow:  6px 6px 8px #838891,-6px -6px 8px #c5e0ff; //add inset for "more 3D"
 }
-.Button:hover{
+.button:hover{
     background-color: #edf5ff;
     box-shadow: 0 0 10px 5px #00000033;
     transform: translate(-5px, -5px);
@@ -71,9 +74,7 @@ nav{        // social media image en bas
             height: 60px;
             transition: 0.4s;
             text-align: center;
-            box-shadow:  6px 6px 8px #838891,-6px -6px 8px #edf5ff;
-            transition: transform 0.4s, border 0.4s, color 0.4s, box-shadow 0.4s;
-            
+            box-shadow:  5px 5px 10px #838891,-5px -5px 10px #edf5ff; //add inset for other effect "more 3D"    
         }
         a:hover{ 
             border: solid 1px #c1deff ;
@@ -83,53 +84,90 @@ nav{        // social media image en bas
         }
     }
 }
+#goBack,  #goTop{
+    display: none;
+}
                             //MEDIA 
 @media screen and (min-width:720px) {       //TABLET
- 
+    #goBack,  #goTop{
+        padding: 8px 15px;
+        box-shadow: none;
+        position: fixed;
+        right: 15px;
+        z-index: 100;   
+        display: inline-block; 
+    }
+    #goBack{
+        top: 15px;
+    }
+    #goTop{
+        opacity: 0;
+        bottom: 15px;
+        transition-duration: 1s;
+        transform : scale(0);
+
+    }
+    #goTop.visible{
+        opacity: 1;
+        transform : scale(1);
+    }
+    #goTop:hover, #goBack:hover{
+        transform: none;
+    }
 }    
 @media screen and (min-width:1080px) {      //DESKTOP
 
 }   
                         //KEYFRAMES
-body{
-    animation: animationBody 1.5s  ease-in;
+                        
+.reveal{
+    position: relative;
+    opacity: 0;
 }
-.animationImage{           //annimation Image
-    animation: animationImg 1s ease-in;
+.reveal.active{
+    opacity: 1;
 }
-.animationTitle{           //annimation Title
-    animation: animationTitle 2s ease-in;
+// body{
+//     animation: animationBody 1.5s  ease-in;
+// }
+.active.animationImage{           //annimation Image
+    animation: animationImg 1.5s ease-in;
 }
-.animationText{           //annimation Text
-    animation: animationText  2s ease-in;
+.active.animationTitle{           //annimation Title
+    animation: animationTitle 1.5s ease-in;
 }
-.animationButton{          //annimation Button
-    animation: animationButton 2s ease-in;
+.active.animationText{           //annimation Text
+    animation: animationText  1.5s ease-in;
 }
-.animationFb{           //annimation Fb
-    animation: animationFb 1s ease-out 0s backwards;
+.active.animationButton{          //annimation Button
+    animation: animationButton 1.5s ease-in;
 }
-.animationInsta{           //annimation Insta
-    animation: animationInsta 1s ease-out 0.5s backwards;
+
+.active.animationGitHub{           //annimation Insta
+    animation: animationGitHub 1s ease-out 0s backwards;
 }
-.animationLink{           //annimation Linke
-    animation: animationLink 1s ease-out 1s backwards;
+.active.animationLink{           //annimation Linke
+    animation: animationLink 1s ease-out 0.5s backwards;
 }
-.animationMail{          //annimation Mail
-    animation: animationMail 1s ease-out 1.5s backwards;
+.active.animationMail{          //annimation Mail
+    animation: animationMail 1s ease-out 1s backwards;
+
 }
-@keyframes animationBody{           //annimation Image 
-    0%{
-        background: #191919;
-    }
-    100%{
-        background: linear-gradient(to top right, $color-black 0%, $color-white 100%);
-    }
+.active.animationHr{           //annimation Image
+    animation: animationHr 1.5s ease-in;
 }
+// @keyframes animationBody{           //annimation Image 
+//     0%{
+//         background: #191919;
+//     }
+//     100%{
+//         background: linear-gradient(to top right, $color-black 0%, $color-white 100%);
+//     }
+// }
 @keyframes animationImg{           //annimation Image 
     from{
         transform:scale(1.07, 1.07);
-        opacity: 0.75;
+        opacity: 0;
     }
     to{
         transform: scale(1, 1);
@@ -148,7 +186,7 @@ body{
 }                     
 @keyframes animationText{           //annimation Text
     from{
-        transform: translateX(-10px);
+        transform: translateX(-20px);
         opacity: 0;
     }
     to{
@@ -167,17 +205,7 @@ body{
         opacity: 1;
     }
 }                     
-@keyframes animationFb{           //annimation Fb
-    from{
-        transform: translateY(15px);
-        opacity: 0;
-    }
-    to{
-        transform: translateY(0);
-        opacity: 1;
-    }
-}   
-@keyframes animationInsta{           //annimation Insta
+@keyframes animationGitHub{           //annimation Insta
     from{
         transform: translateY(15px);
         opacity: 0;
@@ -206,4 +234,12 @@ body{
         transform: translateY(0);
         opacity: 1;
     }
-}   
+} 
+@keyframes animationHr{           //annimation Hr 
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;   
+    }
+}  

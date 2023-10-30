@@ -1,5 +1,5 @@
 html {
-  height: 110vh;
+  height: 100vh;
 }
 
 .mainSection {
@@ -43,5 +43,115 @@ html {
   .mainSection {
     margin: 40px auto;
     max-width: 400px;
+  }
+}
+.animationImage {
+  animation: animationImg 1.5s ease-in;
+}
+
+.animationTitle {
+  animation: animationTitle 1.5s ease-in;
+}
+
+.animationText {
+  animation: animationText 1.5s ease-in;
+}
+
+.animationButton {
+  animation: animationButton 1.5s ease-in;
+}
+
+.animationGitHub {
+  animation: animationGitHub 1s ease-out 0s backwards;
+}
+
+.animationLink {
+  animation: animationLink 1s ease-out 0.5s backwards;
+}
+
+.animationMail {
+  animation: animationMail 1s ease-out 1s backwards;
+}
+
+.animationHr {
+  animation: animationHr 1.5s ease-in;
+}
+
+@keyframes animationImg {
+  from {
+    transform: scale(1.07, 1.07);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+@keyframes animationTitle {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes animationText {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes animationButton {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes animationGitHub {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes animationLink {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes animationMail {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes animationHr {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }/*# sourceMappingURL=index.css.map */

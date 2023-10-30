@@ -16,58 +16,70 @@
 <body>
     <section class="mainSection">
         <!-- HEADER -->
-        <header>
-            <img src="../images/indexImage.jpg" alt="Picture of myself">      
+        <header id="top">
+            <div class="imgDiv">
+                <img id="profileImage" class="reveal animationImage" src="../images/photoProfil_min.jpg" alt="Picture of myself">        
+            </div>
             <article>
-                <h1 class="animationTitle">Hello ! I'm Antoine Martin</h1>
-                <p  class="animationText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe sit tempora nihil, quia temporibus enim laborum. Maiores atque corporis consectetur, molestiae eius aspernatur provident esse doloremque, hic commodi mollitia voluptatibus.</p>
-                <div>
-                    <a class="Button  animationButton" href="./aboutMe.html">About me</a>
-                </div>
+                <h1 class="reveal animationTitle">Hello ! I'm Antoine Martin</h1>
+                <p  class="reveal animationText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe sit tempora nihil, quia temporibus enim laborum. Maiores atque corporis consectetur, molestiae eius aspernatur provident esse doloremque, hic commodi mollitia voluptatibus.</p>
+                <a class="button reveal animationButton" href="./aboutMe.html">About me</a>
             </article>
         </header>
+        <hr  class="reveal animationHr">
         <!-- MAIN -->
         <main>
-            <section class="flexFevers">
-                <img src="../images/indexImage.jpg" alt="">
+            <section class="flexRevers">
+                <div class="imgDiv">
+                    <img class="reveal animationImage" src="../images/it/it_1.jpg" alt="">
+                </div>
                 <article >
-                    <h2>Lorem ipsum dolor sit amet.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe sit tempora nihil, quia temporibus enim laborum. Maiores atque corporis consectetur, molestiae eius aspernatur provident esse doloremque, hic commodi mollitia voluptatibus.</p>
-                    <a class="Button" href="">Portfolio</a>
+                    <h2 class="reveal animationTitle">Lorem ipsum dolor sit amet.</h2>
+                    <p  class="reveal animationText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe sit tempora nihil, quia temporibus enim laborum. Maiores atque corporis consectetur, molestiae eius aspernatur provident esse doloremque, hic commodi mollitia voluptatibus.</p>
+                    <a class="button reveal animationButton" href="./portfolio.html">Portfolio</a>
                 </article>
             </section>
+            <hr  class="reveal animationHr">
             <section>
-                <img src="../images/indexImage.jpg" alt="">
+                <div class="imgDiv calibration">
+                    <img class="reveal animationImage" src="../images/cvImg.jpg" alt="">
+                </div>
                 <article>
-                    <h2>Lorem ipsum dolor sit amet.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe sit tempora nihil, quia temporibus enim laborum. Maiores atque corporis consectetur, molestiae eius aspernatur provident esse doloremque, hic commodi mollitia voluptatibus.</p>
+                    <h2 class="reveal animationTitle">Lorem ipsum dolor sit amet.</h2>
+                    <p class="reveal animationText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe sit tempora nihil, quia temporibus enim laborum. Maiores atque corporis consectetur, molestiae eius aspernatur provident esse doloremque, hic commodi mollitia voluptatibus.</p>
                     <nav>
-                        <a class="Button" href="./cvFr.html">Cv en Français</a>
-                        <a class="Button" href="./cvEn.html">Cv in English</a>
+                        <a id="cv" class="button reveal animationButton" href="./cvFr.html">CV en Français</a>
+                        <a class="button reveal animationButton cvEN" href="./cvEn.html">CV in English</a>
                     </nav>
                 </article>
             </section>
-            <section class="flexFevers">
-                <img src="../images/indexImage.jpg" alt="">
+            <!-- <section class="flexRevers">
+                <div class="imgDiv">
+                    <img class="reveal animationImage" src="../images/indexImage.jpg" alt="">
+                </div>
                 <article>
-                    <h2>Lorem ipsum dolor sit amet.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe sit tempora nihil, quia temporibus enim laborum. Maiores atque corporis consectetur, molestiae eius aspernatur provident esse doloremque, hic commodi mollitia voluptatibus.</p>
-                    <a class="Button" href="#">Button Test</a>
+                    <h2 class="reveal animationTitle">Lorem ipsum dolor sit amet.</h2>
+                    <p class="reveal animationText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe sit tempora nihil, quia temporibus enim laborum. Maiores atque corporis consectetur, molestiae eius aspernatur provident esse doloremque, hic commodi mollitia voluptatibus.</p>
+                    <a class="button reveal animationButton" href="#">Button Test</a>
                 </article>
-            </section>
+            </section> -->
         </main>
-     </section>
+    </section>
         <!-- FOOTER -->
         <footer>
             <nav>
                 <ul>
-                    <li><a href="https://www.facebook.com/antoine.martin.7127" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.instagram.com/poupsinho_/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/antoine-martin-994a8222b/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                    <li><a href="mailto:martinanto96@hotmail.fr" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a class="reveal animationGitHub" href="https://github.com/antomart96" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a class="reveal animationLink" href="https://www.linkedin.com/in/antoine-martin-994a8222b/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a class="reveal animationMail" href="mailto:martinanto96@hotmail.fr" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
                 </ul>
             </nav>
         </footer>
-   
+        <a id="goBack" class="button" href="../index.html"><i class="fa-solid fa-arrow-left fa-xs"></i></a>
+        <a id="goTop" class="button " href="#top"><i class="fa-solid fa-arrow-up fa-xs"></i></a>
+    
+        <!-- Script Files -->
+    <script src="../script/mainPage.js"></script>
+    <script  src="../script/animationScreen.js"></script>
 </body>
 </html>
