@@ -36,6 +36,9 @@
   }
 }
 @media screen and (min-width: 1080px) {
+  html {
+    height: 100vh;
+  }
   .mainSection {
     margin: 40px auto;
     max-width: 400px;
