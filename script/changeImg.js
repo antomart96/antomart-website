@@ -28,4 +28,4 @@ setInterval(function(){         //function to give randomly a new picture every 
     imageClimbing.src = imagesClimbing[random];
     imageRunning.src = imagesRunning[random];
     imageReading.src = imagesReading[random];
-}, 5000);
+}, 4000);

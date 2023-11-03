@@ -43,7 +43,6 @@ img{        //taille générrale pour toutes les images
 .button{    // Button principale sur toutes les pages
     font-weight: bold;
     font-size: 25px;
-    text-decoration: none;
     color: $color-grey;
     padding: 15px 30px;
     transition: 0.4s;
@@ -89,6 +88,10 @@ nav{        // social media image en bas
 }
                             //MEDIA 
 @media screen and (min-width:720px) {       //TABLET
+    .mainSection{
+        margin: 100px auto 10px auto;
+        max-width: 650px;
+    }
     #goBack,  #goTop{
         padding: 8px 15px;
         box-shadow: none;

@@ -21,8 +21,7 @@
 
 @media screen and (min-width: 720px) {
   .mainSection {
-    margin: 100px auto 180px auto;
-    max-width: 600px;
+    margin: 100px auto 10px auto;
   }
   .mainSection h1 {
     padding-top: 30px;

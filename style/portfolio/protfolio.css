@@ -1,0 +1,148 @@
+header {
+  background-color: white;
+  text-align: center;
+}
+header h1 {
+  margin-top: 40px;
+  font-size: 40px;
+}
+header p {
+  padding: 25px 10px;
+}
+header #buttonList {
+  padding: 0;
+}
+header #buttonList button {
+  font-size: 14px;
+  background-color: #A6ADB4;
+  padding: 14px 30px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+header #buttonList button.selected {
+  background-color: lightgreen;
+}
+
+main {
+  margin-bottom: 150px;
+}
+
+.card {
+  height: 420px;
+  width: 370px;
+  margin: 50px auto;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 6px 6px 12px #5a5a5a, -6px -6px 12px #ffffff;
+}
+.card .card_header {
+  background-image: url(../../images/test.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 70%;
+  transition-duration: 0.4s;
+  filter: brightness(1);
+}
+.card .card_content {
+  background-color: #fff;
+  position: absolute;
+  bottom: 50px;
+  transform: translateY(55%);
+  transition-duration: 0.4s;
+}
+.card .card_content h2 {
+  font-size: 2rem;
+  margin: 15px 0px;
+}
+.card .card_content h3 {
+  color: green;
+  margin: 10px 0px;
+}
+.card .card_content p {
+  font-size: 1rem;
+  color: grey;
+  letter-spacing: 2px;
+  font-family: Arial, Helvetica;
+}
+.card .card_footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px;
+}
+.card .card_footer a {
+  color: #585858;
+  padding: 7px 15px;
+  border-radius: 50px;
+  background-color: lightgreen;
+}
+
+.card:hover .card_header {
+  filter: brightness(0.5);
+}
+.card:hover .card_content {
+  transform: translateY(0%);
+}
+
+#article1 {
+  background-image: url(../../images/test.jpg);
+}
+
+footer {
+  background-color: #FFFFFF;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0px -10px 50px 20px #FFFFFF;
+}
+footer nav {
+  padding-top: 25px;
+}
+footer nav a {
+  box-shadow: 5px 5px 10px #edf5ff, -5px -5px 10px rgba(0, 0, 0, 0.2);
+}
+footer nav a:hover {
+  box-shadow: 0 0 10px 5px #838891;
+}
+
+@media screen and (min-width: 720px) {
+  .card {
+    height: 520px;
+    width: 470px;
+  }
+  .card .card_content {
+    bottom: 70px;
+  }
+  footer {
+    background-color: transparent;
+    position: initial;
+    box-shadow: none;
+  }
+  footer nav {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  footer nav a {
+    background-color: #FFFFFF;
+  }
+  main {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .mainSection {
+    max-width: 1400px;
+  }
+  .mainSection main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .mainSection main .card {
+    height: 420px;
+    width: 370px;
+  }
+}/*# sourceMappingURL=protfolio.css.map */

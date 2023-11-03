@@ -10,7 +10,6 @@ header, section{
     overflow: hidden;
 }
 .mainSection{
-    // height: 100vh;
     overflow: auto; 
     position: relative;
     margin-bottom: 100px;
@@ -61,8 +60,6 @@ footer{
     }
     .mainSection{
         height: auto;
-        margin: 100px auto 10px auto;
-        max-width: 650px;
         .flexRevers{
             flex-direction: row-reverse;
         }

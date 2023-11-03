@@ -41,7 +41,6 @@ img {
 .button {
   font-weight: bold;
   font-size: 25px;
-  text-decoration: none;
   color: #585858;
   padding: 15px 30px;
   transition: 0.4s;
@@ -88,6 +87,10 @@ nav ul a:hover {
 }
 
 @media screen and (min-width: 720px) {
+  .mainSection {
+    margin: 100px auto 10px auto;
+    max-width: 650px;
+  }
   #goBack, #goTop {
     padding: 8px 15px;
     box-shadow: none;
