@@ -55,12 +55,6 @@ footer{
     box-shadow: 0px -10px 50px 20px $color-white;  
     nav{
         padding-top: 25px;
-        a{
-            box-shadow:  5px 5px 10px #edf5ff,-5px -5px 10px #00000033;            
-        }
-        a:hover{
-            box-shadow: 0 0 10px 5px  #838891;
-        }
     }
 }
                 //MEDIA 
@@ -73,7 +67,7 @@ footer{
         justify-content: center;
         align-items: center;
         padding: 100px 0px;
-        background: #000;
+        background: #D5CCC1;
     }
     .imgRotation{           //animation 3D rotation with images 
         display: block;
@@ -99,6 +93,7 @@ footer{
                 height: 100%;
                 object-fit: cover;
                 border-radius: 10px;
+                border: 0.5px solid #191919;
             }
         }
     }

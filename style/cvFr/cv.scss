@@ -45,6 +45,11 @@ button{
         inset -2px -2px 3px #ffffff;
     cursor: pointer;
 }
+button:hover{
+    background-color: white;
+    box-shadow: inset 2px 2px 3px white,
+        inset -2px -2px 3px #575757;
+}
 
 aside{              //LEFT
     width: 35%;

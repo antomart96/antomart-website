@@ -8,7 +8,7 @@ $color-white: #FFFFFF;
 $color-dark-yellow:  #FF9900;
 
 header{     //HEADER
-    background-color: white;
+    background-color: #f4f4f5;
     text-align: center;
     h1{
         margin-top: 40px;
@@ -21,14 +21,18 @@ header{     //HEADER
         padding: 0;
         button{
             font-size: 14px;
-            background-color: #A6ADB4;
+            color: #f4f4f5;
+            background-color: #cfba9e;
             padding: 14px 30px;
             border-radius: 15px;
             border: none;
             cursor: pointer;
             &.selected{
-                background-color: lightgreen;
+                background-color: #d5943f;
             }
+        }
+        button:hover{
+            background-color: #d5943f;
         }
     }
 }
@@ -43,7 +47,7 @@ main{
     position: relative;
     border-radius: 5px;
     text-align: center;
-    box-shadow:  6px 6px 12px #5a5a5a, -6px -6px 12px #ffffff;
+    box-shadow:  2px 2px 3px #5a5a5a, -2px -2px 3px #ffffff;
     .card_header{
         background-image: url(../../images/test.jpg);
         background-size: cover;
@@ -80,11 +84,14 @@ main{
         background-color: #fff;
         padding: 25px;
         a{
-            color: $color-grey;  
+            color: #f4f4f5;
             padding: 7px 15px;
             border-radius: 50px;
-            background-color: lightgreen;
+            background-color: #cfba9e;
         }
+        a:hover{
+            background-color: #d5943f;
+        }    
     }
 }
 .card:hover{
@@ -107,12 +114,6 @@ footer{     //FOOTER
     box-shadow: 0px -10px 50px 20px $color-white;  
     nav{
         padding-top: 25px;
-        a{
-            box-shadow:  5px 5px 10px #edf5ff,-5px -5px 10px #00000033;            
-        }
-        a:hover{
-            box-shadow: 0 0 10px 5px  #838891;
-        }
     }
 }
                             //MEDIA 
@@ -149,6 +150,9 @@ footer{     //FOOTER
             .card{
                 height: 420px;
                 width: 370px;
+                .card_content{
+                    bottom: 50px;
+                }
             }
         }
     }

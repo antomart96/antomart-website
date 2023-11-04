@@ -41,6 +41,11 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  background-color: white;
+  box-shadow: inset 2px 2px 3px white, inset -2px -2px 3px #575757;
+}
+
 aside {
   width: 35%;
   height: 100%;

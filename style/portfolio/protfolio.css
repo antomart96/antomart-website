@@ -1,5 +1,5 @@
 header {
-  background-color: white;
+  background-color: #f4f4f5;
   text-align: center;
 }
 header h1 {
@@ -14,14 +14,18 @@ header #buttonList {
 }
 header #buttonList button {
   font-size: 14px;
-  background-color: #A6ADB4;
+  color: #f4f4f5;
+  background-color: #cfba9e;
   padding: 14px 30px;
   border-radius: 15px;
   border: none;
   cursor: pointer;
 }
 header #buttonList button.selected {
-  background-color: lightgreen;
+  background-color: #d5943f;
+}
+header #buttonList button:hover {
+  background-color: #d5943f;
 }
 
 main {
@@ -36,7 +40,7 @@ main {
   position: relative;
   border-radius: 5px;
   text-align: center;
-  box-shadow: 6px 6px 12px #5a5a5a, -6px -6px 12px #ffffff;
+  box-shadow: 2px 2px 3px #5a5a5a, -2px -2px 3px #ffffff;
 }
 .card .card_header {
   background-image: url(../../images/test.jpg);
@@ -75,10 +79,13 @@ main {
   padding: 25px;
 }
 .card .card_footer a {
-  color: #585858;
+  color: #f4f4f5;
   padding: 7px 15px;
   border-radius: 50px;
-  background-color: lightgreen;
+  background-color: #cfba9e;
+}
+.card .card_footer a:hover {
+  background-color: #d5943f;
 }
 
 .card:hover .card_header {
@@ -101,12 +108,6 @@ footer {
 }
 footer nav {
   padding-top: 25px;
-}
-footer nav a {
-  box-shadow: 5px 5px 10px #edf5ff, -5px -5px 10px rgba(0, 0, 0, 0.2);
-}
-footer nav a:hover {
-  box-shadow: 0 0 10px 5px #838891;
 }
 
 @media screen and (min-width: 720px) {
@@ -144,5 +145,8 @@ footer nav a:hover {
   .mainSection main .card {
     height: 420px;
     width: 370px;
+  }
+  .mainSection main .card .card_content {
+    bottom: 50px;
   }
 }/*# sourceMappingURL=protfolio.css.map */

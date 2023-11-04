@@ -23,7 +23,7 @@ html{       //alloud the scroll animation
 }         
 body{       //body background
     background-color: $color-grey; //for browser who don't take the gradient effect
-    background: linear-gradient(to top right, $color-black 0%, $color-white 100%); // pour avoir un fond de qui se déteint
+    background: linear-gradient(to top right, #cfba9e 0%, #DCE4EE 100%); // pour avoir un fond de qui se déteint
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -31,10 +31,10 @@ body{       //body background
 }     
 .mainSection{ // Button principale sur toutes les pages
     color: $color-black-light;
-    background-color: $color-white;
+    background-color: #f4f4f5;
     border-radius: 10px;
     opacity: 0.9;
-    box-shadow:  6px 6px 12px #5a5a5a, -6px -6px 12px #ffffff;
+    box-shadow:  2px 2px 3px #5a5a5a, -2px -2px 3px #ffffff;
     overflow: hidden;
 }       
 img{        //taille générrale pour toutes les images 
@@ -43,17 +43,18 @@ img{        //taille générrale pour toutes les images
 .button{    // Button principale sur toutes les pages
     font-weight: bold;
     font-size: 25px;
-    color: $color-grey;
+    color: #f4f4f5;
     padding: 15px 30px;
     transition: 0.4s;
     display: inline-block; // fait marcher le tranform dans :hover , mais pq ??? pcq button et autre fonction sont en iline par default et donc ça empêche le transform.
     border-radius: 50px;
-    background-color: #dae2f1;
-    box-shadow:  6px 6px 8px #838891,-6px -6px 8px #c5e0ff; //add inset for "more 3D"
+    background-color: #cfba9e; // #cfba9e
+    box-shadow:  2px 2px 3px #918c83,
+     -2px -2px 3px #fcf6f0; //add inset for "more 3D"
 }
 .button:hover{
-    background-color: #edf5ff;
-    box-shadow: 0 0 10px 5px #00000033;
+    background-color: #dec8aad0;
+    box-shadow: 0 0 5px 2.5px #00000033;
     transform: translate(-5px, -5px);
 }      
 nav{        // social media image en bas 
@@ -73,12 +74,13 @@ nav{        // social media image en bas
             height: 60px;
             transition: 0.4s;
             text-align: center;
-            box-shadow:  5px 5px 10px #838891,-5px -5px 10px #edf5ff; //add inset for other effect "more 3D"    
+            box-shadow: 2px 2px 3px #918c83,
+            -2px -2px 3px #fcf6f0; //add inset for other effect "more 3D"    
         }
         a:hover{ 
-            border: solid 1px #c1deff ;
-            color:#c1deff;
-            box-shadow: 0 0 10px 5px #00000033;
+            border: solid 1px #cfba9e ;
+            color:#cfba9e;
+            box-shadow: 0 0 5px 3px #00000033;
             transform: translate(-5px,-5px);
         }
     }

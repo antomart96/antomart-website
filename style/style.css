@@ -18,7 +18,7 @@ html {
 
 body {
   background-color: #585858;
-  background: linear-gradient(to top right, #191919 0%, #FFFFFF 100%);
+  background: linear-gradient(to top right, #cfba9e 0%, #DCE4EE 100%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -27,10 +27,10 @@ body {
 
 .mainSection {
   color: #3C3C3C;
-  background-color: #FFFFFF;
+  background-color: #f4f4f5;
   border-radius: 10px;
   opacity: 0.9;
-  box-shadow: 6px 6px 12px #5a5a5a, -6px -6px 12px #ffffff;
+  box-shadow: 2px 2px 3px #5a5a5a, -2px -2px 3px #ffffff;
   overflow: hidden;
 }
 
@@ -41,18 +41,18 @@ img {
 .button {
   font-weight: bold;
   font-size: 25px;
-  color: #585858;
+  color: #f4f4f5;
   padding: 15px 30px;
   transition: 0.4s;
   display: inline-block;
   border-radius: 50px;
-  background-color: #dae2f1;
-  box-shadow: 6px 6px 8px #838891, -6px -6px 8px #c5e0ff;
+  background-color: #cfba9e;
+  box-shadow: 2px 2px 3px #918c83, -2px -2px 3px #fcf6f0;
 }
 
 .button:hover {
-  background-color: #edf5ff;
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+  background-color: rgba(222, 200, 170, 0.8156862745);
+  box-shadow: 0 0 5px 2.5px rgba(0, 0, 0, 0.2);
   transform: translate(-5px, -5px);
 }
 
@@ -73,12 +73,12 @@ nav ul a {
   height: 60px;
   transition: 0.4s;
   text-align: center;
-  box-shadow: 5px 5px 10px #838891, -5px -5px 10px #edf5ff;
+  box-shadow: 2px 2px 3px #918c83, -2px -2px 3px #fcf6f0;
 }
 nav ul a:hover {
-  border: solid 1px #c1deff;
-  color: #c1deff;
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+  border: solid 1px #cfba9e;
+  color: #cfba9e;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2);
   transform: translate(-5px, -5px);
 }
 
