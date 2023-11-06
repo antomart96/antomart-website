@@ -7,7 +7,7 @@ header h1 {
   font-size: 40px;
 }
 header p {
-  padding: 25px 10px;
+  padding: 25px 30px;
 }
 header #buttonList {
   padding: 0;
@@ -143,6 +143,9 @@ footer nav {
 }
 
 @media screen and (min-width: 720px) {
+  header p {
+    padding: 25px 60px;
+  }
   .card {
     height: 520px;
     width: 470px;
@@ -166,6 +169,10 @@ footer nav {
 @media screen and (min-width: 1080px) {
   .mainSection {
     max-width: 1400px;
+  }
+  .mainSection header p {
+    font-size: 15px;
+    padding: 25px 120px;
   }
   .mainSection main {
     display: flex;

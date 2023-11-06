@@ -15,7 +15,7 @@ header{     //HEADER
         font-size: 40px;
     }
     p{
-        padding: 25px 10px;
+        padding: 25px 30px;
     }
     #buttonList{
         padding: 0;
@@ -151,6 +151,11 @@ footer{     //FOOTER
 }
                             //MEDIA 
 @media screen and (min-width:720px) {       //TABLET
+    header{
+        p{
+            padding: 25px 60px;
+        }
+    }
     .card{
         height: 520px;
         width: 470px;
@@ -174,6 +179,12 @@ footer{     //FOOTER
 @media screen and (min-width:1080px) {     //DESKTOP   
     .mainSection{
         max-width: 1400px;
+        header{
+            p{
+                font-size: 15px;
+                padding: 25px 120px;
+            }
+        }
         main{
             display: flex;
             flex-wrap: wrap;
