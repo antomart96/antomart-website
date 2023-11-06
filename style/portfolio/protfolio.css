@@ -41,28 +41,64 @@ main {
   border-radius: 5px;
   text-align: center;
   box-shadow: 2px 2px 3px #5a5a5a, -2px -2px 3px #ffffff;
+  background-color: white;
 }
 .card .card_header {
-  background-image: url(../../images/test.jpg);
   background-size: cover;
   background-position: center;
   height: 70%;
   transition-duration: 0.4s;
   filter: brightness(1);
 }
+.card #article1 {
+  background-image: url(../../images/portfolio/portfolio_1.png);
+}
+.card #art1 {
+  bottom: 42px;
+}
+.card #article2 {
+  background-image: url(../../images/portfolio/portfolio_2.png);
+}
+.card #art2 {
+  bottom: 59px;
+}
+.card #article3 {
+  background-image: url(../../images/portfolio/portfolio_3.png);
+}
+.card #art3 {
+  bottom: 59px;
+}
+.card #article4 {
+  background-image: url(../../images/portfolio/portfolio_4.png);
+}
+.card #art4 {
+  bottom: 34px;
+}
+.card #article5 {
+  background-image: url(../../images/portfolio/portfolio_5.png);
+}
+.card #art5 {
+  bottom: 59px;
+}
+.card #article6 {
+  background-image: url(../../images/portfolio/portfolio_6.png);
+}
+.card #art6 {
+  bottom: 18px;
+}
 .card .card_content {
   background-color: #fff;
   position: absolute;
-  bottom: 50px;
   transform: translateY(55%);
   transition-duration: 0.4s;
+  padding-bottom: 50px;
 }
 .card .card_content h2 {
   font-size: 2rem;
   margin: 15px 0px;
 }
 .card .card_content h3 {
-  color: green;
+  color: #d5943f;
   margin: 10px 0px;
 }
 .card .card_content p {
@@ -95,10 +131,6 @@ main {
   transform: translateY(0%);
 }
 
-#article1 {
-  background-image: url(../../images/test.jpg);
-}
-
 footer {
   background-color: #FFFFFF;
   position: fixed;
@@ -114,9 +146,6 @@ footer nav {
   .card {
     height: 520px;
     width: 470px;
-  }
-  .card .card_content {
-    bottom: 70px;
   }
   footer {
     background-color: transparent;
@@ -148,5 +177,14 @@ footer nav {
   }
   .mainSection main .card .card_content {
     bottom: 50px;
+  }
+}
+/* Styles pour les dispositifs tactiles sur tablette et mobile */
+@media (hover: none) and (max-width: 1080px) {
+  .card:hover .card_header {
+    filter: brightness(0.5);
+  }
+  .card:hover .card_content {
+    transform: translateY(0%);
   }
 }/*# sourceMappingURL=protfolio.css.map */
