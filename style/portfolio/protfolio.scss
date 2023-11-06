@@ -130,7 +130,7 @@ main{
         }    
     }
 }
-.card:hover{
+.card:hover, .card:active{
     .card_header {
         filter: brightness(0.5);
     }
@@ -184,17 +184,6 @@ footer{     //FOOTER
                     bottom: 50px;
                 }
             }
-        }
-    }
-}
-/* Styles pour les dispositifs tactiles sur tablette et mobile */
-@media (hover: none) and (max-width: 1080px) {
-    .card:hover {
-        .card_header {
-            filter: brightness(0.5);
-        }
-        .card_content {
-            transform: translateY(0%);
         }
     }
 }

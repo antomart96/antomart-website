@@ -49,3 +49,5 @@ function showApp() {
         }
     }
 }
+
+document.addEventListener("touchstart", function(){}, true);

@@ -124,10 +124,10 @@ main {
   background-color: #d5943f;
 }
 
-.card:hover .card_header {
+.card:hover .card_header, .card:active .card_header {
   filter: brightness(0.5);
 }
-.card:hover .card_content {
+.card:hover .card_content, .card:active .card_content {
   transform: translateY(0%);
 }
 
@@ -177,14 +177,5 @@ footer nav {
   }
   .mainSection main .card .card_content {
     bottom: 50px;
-  }
-}
-/* Styles pour les dispositifs tactiles sur tablette et mobile */
-@media (hover: none) and (max-width: 1080px) {
-  .card:hover .card_header {
-    filter: brightness(0.5);
-  }
-  .card:hover .card_content {
-    transform: translateY(0%);
   }
 }/*# sourceMappingURL=protfolio.css.map */
