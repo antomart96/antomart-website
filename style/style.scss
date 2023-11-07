@@ -48,8 +48,10 @@ img{        //taille générrale pour toutes les images
     transition: 0.4s;
     display: inline-block; // fait marcher le tranform dans :hover , mais pq ??? pcq button et autre fonction sont en iline par default et donc ça empêche le transform.
     border-radius: 50px;
-    background-color: #cfba9e; // #cfba9e
-    box-shadow:  2px 2px 3px #918c83,
+    // background-color: #0ea4e9ac; // #cfba9e
+    // background: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+    background: linear-gradient(177.9deg, rgba(58, 62, 88, 0.268) 3.6%, rgb(119, 127, 148) 105.8%);
+        box-shadow:  2px 2px 3px #918c83,
      -2px -2px 3px #fcf6f0; //add inset for "more 3D"
 }
 .button:hover{

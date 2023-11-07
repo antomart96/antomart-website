@@ -46,7 +46,7 @@ img {
   transition: 0.4s;
   display: inline-block;
   border-radius: 50px;
-  background-color: #cfba9e;
+  background: linear-gradient(177.9deg, rgba(58, 62, 88, 0.268) 3.6%, rgb(119, 127, 148) 105.8%);
   box-shadow: 2px 2px 3px #918c83, -2px -2px 3px #fcf6f0;
 }
 
