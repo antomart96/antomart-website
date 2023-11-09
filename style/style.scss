@@ -31,7 +31,7 @@ body{       //body background
 }     
 .mainSection{ // Button principale sur toutes les pages
     color: $color-black-light;
-    background-color: #f4f4f5;
+    background-color: #f4f4f5; //#f4f4f5
     border-radius: 10px;
     opacity: 0.9;
     box-shadow:  2px 2px 3px #5a5a5a, -2px -2px 3px #ffffff;
@@ -43,15 +43,13 @@ img{        //taille générrale pour toutes les images
 .button{    // Button principale sur toutes les pages
     font-weight: bold;
     font-size: 25px;
-    color: #f4f4f5;
+    color: #f4f4f5 ; //#f4f4f5
     padding: 15px 30px;
     transition: 0.4s;
     display: inline-block; // fait marcher le tranform dans :hover , mais pq ??? pcq button et autre fonction sont en iline par default et donc ça empêche le transform.
     border-radius: 50px;
-    // background-color: #0ea4e9ac; // #cfba9e
-    // background: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
-    background: linear-gradient(177.9deg, rgba(58, 62, 88, 0.268) 3.6%, rgb(119, 127, 148) 105.8%);
-        box-shadow:  2px 2px 3px #918c83,
+    background: linear-gradient(177.9deg, #3a3e5844 3.6%, #777f94 105.8%);
+    box-shadow:  2px 2px 3px #918c83,
      -2px -2px 3px #fcf6f0; //add inset for "more 3D"
 }
 .button:hover{
@@ -80,8 +78,8 @@ nav{        // social media image en bas
             -2px -2px 3px #fcf6f0; //add inset for other effect "more 3D"    
         }
         a:hover{ 
-            border: solid 1px #cfba9e ;
-            color:#cfba9e;
+            border: solid 1px #777f94;
+            color: #777f94;
             box-shadow: 0 0 5px 3px #00000033;
             transform: translate(-5px,-5px);
         }

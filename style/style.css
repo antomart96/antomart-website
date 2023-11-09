@@ -46,7 +46,7 @@ img {
   transition: 0.4s;
   display: inline-block;
   border-radius: 50px;
-  background: linear-gradient(177.9deg, rgba(58, 62, 88, 0.268) 3.6%, rgb(119, 127, 148) 105.8%);
+  background: linear-gradient(177.9deg, rgba(58, 62, 88, 0.2666666667) 3.6%, #777f94 105.8%);
   box-shadow: 2px 2px 3px #918c83, -2px -2px 3px #fcf6f0;
 }
 
@@ -76,8 +76,8 @@ nav ul a {
   box-shadow: 2px 2px 3px #918c83, -2px -2px 3px #fcf6f0;
 }
 nav ul a:hover {
-  border: solid 1px #cfba9e;
-  color: #cfba9e;
+  border: solid 1px #777f94;
+  color: #777f94;
   box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2);
   transform: translate(-5px, -5px);
 }
