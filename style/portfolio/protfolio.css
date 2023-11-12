@@ -15,17 +15,17 @@ header #buttonList {
 header #buttonList button {
   font-size: 14px;
   color: #f4f4f5;
-  background-color: #cfba9e;
+  background: linear-gradient(177.9deg, rgba(58, 62, 88, 0.2666666667) 3.6%, #777f94 105.8%);
   padding: 14px 30px;
   border-radius: 15px;
   border: none;
   cursor: pointer;
 }
 header #buttonList button.selected {
-  background-color: #d5943f;
+  background-color: rgba(222, 200, 170, 0.8156862745);
 }
 header #buttonList button:hover {
-  background-color: #d5943f;
+  background-color: rgba(222, 200, 170, 0.8156862745);
 }
 
 main {
@@ -97,10 +97,6 @@ main {
   font-size: 2rem;
   margin: 15px 0px;
 }
-.card .card_content h3 {
-  color: #d5943f;
-  margin: 10px 0px;
-}
 .card .card_content p {
   font-size: 1rem;
   color: grey;
@@ -118,10 +114,12 @@ main {
   color: #f4f4f5;
   padding: 7px 15px;
   border-radius: 50px;
-  background-color: #cfba9e;
+  background: linear-gradient(177.9deg, rgba(58, 62, 88, 0.2666666667) 3.6%, #777f94 105.8%);
+  box-shadow: 2px 2px 3px #918c83, -2px -2px 3px #fcf6f0;
 }
 .card .card_footer a:hover {
-  background-color: #d5943f;
+  background-color: rgba(222, 200, 170, 0.8156862745);
+  box-shadow: 0 0 5px 2.5px rgba(0, 0, 0, 0.2);
 }
 
 .card:hover .card_header, .card:active .card_header {

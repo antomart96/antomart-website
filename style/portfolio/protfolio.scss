@@ -22,16 +22,15 @@ header{     //HEADER
         button{
             font-size: 14px;
             color: #f4f4f5;
-            background-color: #cfba9e;
-            padding: 14px 30px;
+            background: linear-gradient(177.9deg, #3a3e5844 3.6%, #777f94 105.8%);            padding: 14px 30px;
             border-radius: 15px;
             border: none;
             cursor: pointer;
             &.selected{
-                background-color: #d5943f;
+                background-color: #dec8aad0;
             }
             &:hover{
-                background-color: #d5943f;
+                background-color: #dec8aad0;
             }
         }
     }
@@ -102,10 +101,6 @@ main{
             font-size: 2rem;
             margin: 15px 0px;
         }
-        h3{
-            color: #d5943f;
-            margin: 10px 0px;
-        }
         p{
             font-size: 1rem;
             color: grey;
@@ -117,16 +112,19 @@ main{
         position: absolute;
         bottom: 0;
         width: 100%;
-        background-color: #fff;
+        background-color: #fff ;
         padding: 25px;
         a{
-            color: #f4f4f5;
+            color: #f4f4f5 ;
             padding: 7px 15px;
             border-radius: 50px;
-            background-color: #cfba9e;
+            background: linear-gradient(177.9deg, #3a3e5844 3.6%, #777f94 105.8%);
+            box-shadow:  2px 2px 3px #918c83,
+            -2px -2px 3px #fcf6f0; //add inset for "more 3D"
         }
         a:hover{
-            background-color: #d5943f;
+            background-color: #dec8aad0;
+            box-shadow: 0 0 5px 2.5px #00000033;
         }    
     }
 }
