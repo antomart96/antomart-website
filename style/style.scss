@@ -132,9 +132,7 @@ nav{        // social media image en bas
 .reveal.active{
     opacity: 1;
 }
-// body{
-//     animation: animationBody 1.5s  ease-in;
-// }
+
 .active.animationImage{           //annimation Image
     animation: animationImg 1.5s ease-in;
 }
@@ -161,14 +159,7 @@ nav{        // social media image en bas
 .active.animationHr{           //annimation Image
     animation: animationHr 1.5s ease-in;
 }
-// @keyframes animationBody{           //annimation Image 
-//     0%{
-//         background: #191919;
-//     }
-//     100%{
-//         background: linear-gradient(to top right, $color-black 0%, $color-white 100%);
-//     }
-// }
+
 @keyframes animationImg{           //annimation Image 
     from{
         transform:scale(1.07, 1.07);
