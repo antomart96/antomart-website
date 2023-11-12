@@ -45,7 +45,7 @@ img {
   padding: 15px 30px;
   transition: 0.4s;
   display: inline-block;
-  border-radius: 20px;
+  border-radius: 15px;
   background: linear-gradient(177.9deg, rgba(58, 62, 88, 0.2666666667) 3.6%, #777f94 105.8%);
   box-shadow: 2px 2px 3px #918c83, -2px -2px 3px #fcf6f0;
 }
