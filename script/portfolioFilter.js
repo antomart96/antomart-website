@@ -1,5 +1,5 @@
                 // * Filter Section
-//all
+//ALL
 document.querySelector('#all').addEventListener('click', function(){
     //The currently "selected" button is in color
 document.querySelector('.selected').classList.remove('selected');   
@@ -14,7 +14,7 @@ const allArticle = document.querySelectorAll('main article')
     }
 }
 
-//IN STOCK
+//WEB
 document.querySelector('#web').addEventListener("click", showWeb);
 function showWeb() {
      //The currently "selected" button is in color
@@ -32,7 +32,7 @@ function showWeb() {
     }
 }
 
-//Soon
+//APP
 document.querySelector('#app').addEventListener("click", showApp);
 function showApp() {
      //The currently "selected" button is in color
@@ -50,4 +50,3 @@ function showApp() {
     }
 }
 
-document.addEventListener("touchstart", function(){}, true);
