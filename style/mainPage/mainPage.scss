@@ -13,10 +13,15 @@ header, section{
     overflow: auto; 
     position: relative;
     margin-bottom: 100px;
+    text-align: center;
     article{
         padding:60px 20px;
+        h1,h2,p{
+            text-align: left;
+        }
         h1{
             font-size: 40px;
+            
         }
         h2{
             font-size: 30px;
@@ -27,9 +32,12 @@ header, section{
             font-size: 20px;
         }
         a{
-            width: 100%;
-            text-align: center;
+            width: auto;
+            margin: 0 auto;
             margin-top: 20px;
+        }
+        .cvEN{
+            padding: 15px 40px;
         }
     }
     hr{
@@ -80,9 +88,6 @@ footer{
                 width: auto;
             }
         } 
-        .cvEN{
-            padding: 15px 40px;
-        }
     }
     footer{
         background-color: transparent;

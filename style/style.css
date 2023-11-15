@@ -47,7 +47,7 @@ img {
   display: inline-block;
   border-radius: 15px;
   background: linear-gradient(177.9deg, rgba(58, 62, 88, 0.2666666667) 3.6%, #777f94 105.8%);
-  box-shadow: 2px 2px 3px #918c83, -2px -2px 3px #fcf6f0;
+  box-shadow: 2px 2px 5px #918c83, -2px -2px 5px #fcf6f0;
 }
 
 .button:hover {

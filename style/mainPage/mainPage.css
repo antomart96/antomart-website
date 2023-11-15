@@ -6,9 +6,13 @@ header, section {
   overflow: auto;
   position: relative;
   margin-bottom: 100px;
+  text-align: center;
 }
 .mainSection article {
   padding: 60px 20px;
+}
+.mainSection article h1, .mainSection article h2, .mainSection article p {
+  text-align: left;
 }
 .mainSection article h1 {
   font-size: 40px;
@@ -22,9 +26,12 @@ header, section {
   font-size: 20px;
 }
 .mainSection article a {
-  width: 100%;
-  text-align: center;
+  width: auto;
+  margin: 0 auto;
   margin-top: 20px;
+}
+.mainSection article .cvEN {
+  padding: 15px 40px;
 }
 .mainSection hr {
   border: 2px solid #C2C2C2;
@@ -74,9 +81,6 @@ footer nav {
   }
   .mainSection article a {
     width: auto;
-  }
-  .mainSection .cvEN {
-    padding: 15px 40px;
   }
   footer {
     background-color: transparent;
