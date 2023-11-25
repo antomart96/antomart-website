@@ -1,15 +1,14 @@
             //MOBILE            
 $color-black: #191919;
 $color-black-light: #3C3C3C;
-$color-yellow:  #FFCC00;
 $color-grey-light: #C2C2C2;
 $color-grey: #585858;
 $color-white: #FFFFFF;
-$color-dark-yellow:  #FF9900;
+            //HEADER
 header, section{
     overflow: hidden;
 }
-.mainSection{
+.mainSection{   //MAIN
     overflow: auto; 
     position: relative;
     margin-bottom: 100px;
@@ -45,7 +44,7 @@ header, section{
         margin: 40px 30%;
     }
 }
-footer{         
+footer{         //FOOTER
     background-color: $color-white;
     position: fixed;
     bottom: 0;

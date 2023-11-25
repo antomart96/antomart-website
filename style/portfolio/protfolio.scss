@@ -1,11 +1,10 @@
             //MOBILE            
 $color-black: #191919;
 $color-black-light: #3C3C3C;
-$color-yellow:  #FFCC00;
 $color-grey-light: #C2C2C2;
 $color-grey: #585858;
 $color-white: #FFFFFF;
-$color-dark-yellow:  #FF9900;
+
 
 header{     //HEADER
     background-color: #f4f4f5;
@@ -22,7 +21,8 @@ header{     //HEADER
         button{
             font-size: 14px;
             color: #f4f4f5;
-            background: linear-gradient(177.9deg, #3a3e5844 3.6%, #777f94 105.8%);            padding: 14px 30px;
+            background: linear-gradient(177.9deg, #3a3e5844 3.6%, #777f94 105.8%);            
+            padding: 14px 30px;
             border-radius: 15px;
             border: none;
             cursor: pointer;
@@ -35,7 +35,7 @@ header{     //HEADER
         }
     }
 }
-main{
+main{          //MAIN
     margin-bottom: 150px;
 }
 .card{
