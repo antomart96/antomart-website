@@ -50,7 +50,11 @@ button:hover{
     box-shadow: inset 2px 2px 5px white,
        inset -2px -2px 5px #575757;
 }
-
+#ps{
+    text-align: center;
+    margin: 30px  auto;
+    font-size: 12px;
+}
 aside{              //LEFT
     width: 35%;
     height: 100%;
@@ -81,15 +85,17 @@ aside{              //LEFT
         div{
             padding-left: 15px;
             &.langue{
+                padding-top: 0px;
                 padding-right: 30px;
                 display: flex;
                 justify-content: space-between;
             }
             h3{
+                padding-top: 5px;
                 font-size: 12px;
             }
             a{
-                font-size: 12px;
+                font-size: 12px; 
                 text-decoration: none;
                 color: #432A16;
             }
@@ -171,7 +177,7 @@ main{               //Right
 }
 
 @media print{
-    button{
+    button, #ps{
         display: none;
      }
 }

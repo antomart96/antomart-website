@@ -46,6 +46,12 @@ button:hover {
   box-shadow: inset 2px 2px 5px white, inset -2px -2px 5px #575757;
 }
 
+#ps {
+  text-align: center;
+  margin: 30px auto;
+  font-size: 12px;
+}
+
 aside {
   width: 35%;
   height: 100%;
@@ -78,11 +84,13 @@ aside #asideSection-1 div {
   padding-left: 15px;
 }
 aside #asideSection-1 div.langue {
+  padding-top: 0px;
   padding-right: 30px;
   display: flex;
   justify-content: space-between;
 }
 aside #asideSection-1 div h3 {
+  padding-top: 5px;
   font-size: 12px;
 }
 aside #asideSection-1 div a {
@@ -162,7 +170,7 @@ main #mainSection .sillSection .skillDiv {
 }
 
 @media print {
-  button {
+  button, #ps {
     display: none;
   }
 }/*# sourceMappingURL=cv.css.map */
