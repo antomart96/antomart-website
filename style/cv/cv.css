@@ -55,7 +55,7 @@ button:hover {
 aside {
   width: 35%;
   height: 100%;
-  background-color: #D9D4CE;
+  background-color: #E5DCCA;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,7 +109,7 @@ main {
   height: 100%;
 }
 main header {
-  background-color: rgba(206, 201, 196, 0.6235294118);
+  background-color: rgba(229, 220, 202, 0.9058823529);
   padding: 40px;
 }
 main #mainSection {

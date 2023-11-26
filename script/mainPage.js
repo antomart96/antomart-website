@@ -5,7 +5,7 @@ window.addEventListener('load', function() {
     const windowWidth = window.innerWidth;
 
     if (windowWidth < 720 || windowWidth > 1080) {
-        profileImage.src = '../images/photoProfil_min.jpg';
+        profileImage.src = '../images/photoProfil_mini.jpg';
     } else {
         profileImage.src = '../images/photoProfil.jpg';
     }
