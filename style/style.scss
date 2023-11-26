@@ -1,15 +1,12 @@
-            // GENERAL CSS FOR ALL PAGES 
+        // GENERAL CSS FOR ALL PAGES 
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     // border: 1px solid red; //helps to see all the boxes correctly in the page
 }
-$color-black: #191919;
-$color-black-light: #3C3C3C;
-$color-grey-light: #C2C2C2;
-$color-grey: #585858;
-$color-white: #FFFFFF;
+        //COLOR
+    @import 'color.scss';        
 ul{         //Suppression des points de liste
     list-style: none;
 }
@@ -21,7 +18,7 @@ html{       //alloud the scroll animation
 }         
 body{       //body background
     background-color: $color-grey; //for browser who don't take the gradient effect
-    background: linear-gradient(to top right, #cfba9e 0%, #DCE4EE 100%); // pour avoir un fond de qui se déteint
+    background: linear-gradient(to top right, $color-brown-light-1 0%, $color-blue-light-1 100%); // pour avoir un fond de qui se déteint
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -29,10 +26,10 @@ body{       //body background
 }     
 .mainSection{ // Button principale sur toutes les pages
     color: $color-black-light;
-    background-color: #f4f4f5; //#f4f4f5
+    background-color: $color-white-light-1;
     border-radius: 10px;
     opacity: 0.9;
-    box-shadow:  2px 2px 3px #5a5a5a, -2px -2px 3px #ffffff;
+    box-shadow:  2px 2px 3px $color-grey-1, -2px -2px 3px $color-white;
     overflow: hidden;
 }       
 img{        //taille générrale pour toutes les images 
@@ -41,18 +38,18 @@ img{        //taille générrale pour toutes les images
 .button{    // Button principale sur toutes les pages
     font-weight: bold;
     font-size: 25px;
-    color: #f4f4f5 ; //#f4f4f5
+    color: $color-white-light-1; 
     padding: 15px 30px;
     transition: 0.4s;
     display: inline-block; // fait marcher le tranform dans :hover , mais pq ??? pcq button et autre fonction sont en iline par default et donc ça empêche le transform.
     border-radius: 15px;
-    background: linear-gradient(177.9deg, #3a3e5844 3.6%, #777f94 105.8%);
-    box-shadow:  2px 2px 5px #918c83,
-      -2px -2px 5px #fcf6f0; //add inset for "more 3D"
+    background: linear-gradient(177.9deg, $color-blue-light-3 3.6%, $color-blue-light-2 105.8%);
+    box-shadow:  2px 2px 5px $color-grey-light,
+      -2px -2px 5px $color-white-light-2; //add inset for "more 3D"
 }
 .button:hover{
-    background-color: #dec8aad0;
-    box-shadow: 0 0 5px 2.5px #00000033;
+    background-color: $color-brown-light-2;
+    box-shadow: 0 0 5px 2.5px $color-black;
     transform: translate(-5px, -5px);
 }      
 nav{        // social media image en bas 
@@ -72,13 +69,13 @@ nav{        // social media image en bas
             height: 60px;
             transition: 0.4s;
             text-align: center;
-            box-shadow: 2px 2px 3px #918c83,
-            -2px -2px 3px #fcf6f0; //add inset for other effect "more 3D"    
+            box-shadow: 2px 2px 3px $color-grey-light,
+            -2px -2px 3px $color-white-light-2; //add inset for other effect "more 3D"    
         }
         a:hover{ 
-            border: solid 1px #777f94;
-            color: #777f94;
-            box-shadow: 0 0 5px 3px #00000033;
+            border: solid 1px $color-blue-light-2;
+            color: $color-blue-light-2;
+            box-shadow: 0 0 5px 3px $color-blac;
             transform: translate(-5px,-5px);
         }
     }

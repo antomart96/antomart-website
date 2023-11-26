@@ -1,9 +1,6 @@
             //MOBILE            
-$color-black: #191919;
-$color-black-light: #3C3C3C;
-$color-grey-light: #C2C2C2;
-$color-grey: #585858;
-$color-white: #FFFFFF;
+        //COLOR
+@import '../color.scss'; 
             //HEADER
 header, section{
     overflow: hidden;
@@ -40,7 +37,7 @@ header, section{
         }
     }
     hr{
-        border: 2px solid $color-grey-light;
+        border: 2px solid $color-grey-light-hr;
         margin: 40px 30%;
     }
 }

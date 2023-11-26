@@ -1,5 +1,4 @@
 header {
-  background-color: #f4f4f5;
   text-align: center;
 }
 header h1 {
@@ -40,8 +39,8 @@ main {
   position: relative;
   border-radius: 5px;
   text-align: center;
-  box-shadow: 2px 2px 3px #5a5a5a, -2px -2px 3px #ffffff;
-  background-color: white;
+  box-shadow: 2px 2px 3px #5a5a5a, -2px -2px 3px #FFFFFF;
+  background-color: #FFFFFF;
 }
 .card .card_header {
   background-size: cover;
@@ -87,7 +86,7 @@ main {
   bottom: 18px;
 }
 .card .card_content {
-  background-color: #fff;
+  background-color: #FFFFFF;
   position: absolute;
   transform: translateY(55%);
   transition-duration: 0.4s;
@@ -99,7 +98,7 @@ main {
 }
 .card .card_content p {
   font-size: 1rem;
-  color: grey;
+  color: #585858;
   letter-spacing: 2px;
   font-family: Arial, Helvetica;
 }
@@ -107,7 +106,7 @@ main {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: #FFFFFF;
   padding: 25px;
 }
 .card .card_footer a {

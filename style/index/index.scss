@@ -1,9 +1,6 @@
             //MOBILE
-$color-black: #191919;
-$color-black-light: #3C3C3C;
-$color-grey-light: #C2C2C2;
-$color-grey: #585858;
-$color-white: #FFFFFF;
+        //COLOR
+@import '../color.scss';
 // Center of the cards
 .mainSection{   
     margin: 30px 30px 50px 30px;
@@ -19,7 +16,7 @@ $color-white: #FFFFFF;
     }
     hr{
         margin: 20px 50px;
-        border: 1px solid $color-grey-light;
+        border: 1px solid $color-grey-light-hr;
     } 
     img{
         border-radius: 10px 10px 0px 0px;
@@ -51,9 +48,6 @@ $color-white: #FFFFFF;
     }
 }   
                         //KEYFRAMES
-// body{
-//     animation: animationBody 1.5s  ease-in;
-// }
 .animationImage{           //annimation Image
     animation: animationImg 1.5s ease-in;
 }
@@ -80,14 +74,6 @@ $color-white: #FFFFFF;
 .animationHr{           //annimation Image
     animation: animationHr 1.5s ease-in;
 }
-// @keyframes animationBody{           //annimation Image 
-//     0%{
-//         background: #191919;
-//     }
-//     100%{
-//         background: linear-gradient(to top right, $color-black 0%, $color-white 100%);
-//     }
-// }
 @keyframes animationImg{           //annimation Image 
     from{
         transform:scale(1.07, 1.07);

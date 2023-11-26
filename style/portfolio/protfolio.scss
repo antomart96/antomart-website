@@ -1,13 +1,7 @@
             //MOBILE            
-$color-black: #191919;
-$color-black-light: #3C3C3C;
-$color-grey-light: #C2C2C2;
-$color-grey: #585858;
-$color-white: #FFFFFF;
-
-
+        //COLOR
+@import '../color.scss'; 
 header{     //HEADER
-    background-color: #f4f4f5;
     text-align: center;
     h1{
         margin-top: 40px;
@@ -20,17 +14,17 @@ header{     //HEADER
         padding: 0;
         button{
             font-size: 14px;
-            color: #f4f4f5;
-            background: linear-gradient(177.9deg, #3a3e5844 3.6%, #777f94 105.8%);            
+            color: $color-white-light-1;
+            background: linear-gradient(177.9deg, $color-blue-light-3 3.6%, $color-blue-light-2 105.8%);            
             padding: 14px 30px;
             border-radius: 15px;
             border: none;
             cursor: pointer;
             &.selected{
-                background-color: #dec8aad0;
+                background-color: $color-brown-light-2;
             }
             &:hover{
-                background-color: #dec8aad0;
+                background-color: $color-brown-light-2;
             }
         }
     }
@@ -46,8 +40,8 @@ main{          //MAIN
     position: relative;
     border-radius: 5px;
     text-align: center;
-    box-shadow:  2px 2px 3px #5a5a5a, -2px -2px 3px #ffffff;
-    background-color: white;
+    box-shadow:  2px 2px 3px $color-grey-1, -2px -2px 3px $color-white;
+    background-color: $color-white;
     .card_header{
         background-size: cover;
         background-position: center;
@@ -92,7 +86,7 @@ main{          //MAIN
         bottom: 18px;
     }
     .card_content{
-        background-color: #fff;
+        background-color: $color-white;
         position: absolute;
         transform: translateY(55%);
         transition-duration: 0.4s;
@@ -103,7 +97,7 @@ main{          //MAIN
         }
         p{
             font-size: 1rem;
-            color: grey;
+            color: $color-grey;
             letter-spacing: 2px;
             font-family: Arial, Helvetica;
         }
@@ -112,19 +106,19 @@ main{          //MAIN
         position: absolute;
         bottom: 0;
         width: 100%;
-        background-color: #fff ;
+        background-color: $color-white;
         padding: 25px;
         a{
-            color: #f4f4f5 ;
+            color: $color-white-light-1;
             padding: 7px 15px;
             border-radius: 50px;
-            background: linear-gradient(177.9deg, #3a3e5844 3.6%, #777f94 105.8%);
-            box-shadow:  2px 2px 3px #918c83,
-            -2px -2px 3px #fcf6f0; //add inset for "more 3D"
+            background: linear-gradient(177.9deg, $color-blue-light-3 3.6%, $color-blue-light-2 105.8%);
+            box-shadow:  2px 2px 3px $color-grey-light,
+            -2px -2px 3px $color-white-light-2; //add inset for "more 3D"
         }
         a:hover{
-            background-color: #dec8aad0;
-            box-shadow: 0 0 5px 2.5px #00000033;
+            background-color: $color-brown-light-2;
+            box-shadow: 0 0 5px 2.5px $color-black;
         }    
     }
 }
