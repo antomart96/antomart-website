@@ -109,7 +109,7 @@ main {
   height: 100%;
 }
 main header {
-  background-color: rgba(229, 220, 202, 0.9058823529);
+  background-color: rgba(229, 220, 202, 0.5882352941);
   padding: 40px;
 }
 main #mainSection {
