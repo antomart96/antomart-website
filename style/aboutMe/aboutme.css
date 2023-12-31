@@ -7,7 +7,6 @@ header, section {
 }
 
 .mainSection {
-  height: 100vh;
   overflow: auto;
   position: relative;
   margin-bottom: 100px;
