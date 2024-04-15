@@ -1,11 +1,11 @@
 
 let buttonTop = document.querySelector('#goTop'); 
-// when sroll down 500px the link shows up and when u go back it disappear
+// when scroll down 500px the link shows up and when u go back it disappear
 window.onscroll = function(){
     scrollDown();
 }
 
-function scrollDown(){  //fonction qui vérifie qui met un lien visible si il est en dessous de 500px
+function scrollDown(){  //fonction qui vérifie qui met un lien visible s'il est en dessous de 500px
     if(window.scrollY > 500 ){
         buttonTop.classList.add("visible")
     }else{
