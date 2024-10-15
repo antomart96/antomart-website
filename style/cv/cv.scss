@@ -56,7 +56,7 @@ aside{              //LEFT
     background-color: $color-brown-light-3;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
     #profilImg{
         overflow: hidden;
         height: 25%;
@@ -66,7 +66,10 @@ aside{              //LEFT
         }
     }
     #asideSection-1{
-        padding:  0px 0px 15px 15px;
+        padding:  0px 40px 0px 40px;
+        #qr_code{
+            width: 27%;
+        }
         h2{
             font-size: 18px;
             margin-top: 25px;
@@ -84,6 +87,9 @@ aside{              //LEFT
                 padding-right: 30px;
                 display: flex;
                 justify-content: space-between;
+            }
+            .interests{
+                padding-bottom: 5px;
             }
             h3{
                 padding-top: 5px;
@@ -110,9 +116,9 @@ main{               //Right
         padding: 40px;
     }
     #mainSection{
-        padding: 25px 30px;
+        padding: 20px 30px;
         article{
-            margin-bottom: 15px;
+            margin-bottom: 13px;
             h2{
                 font-size: 18px;
             }
@@ -147,26 +153,30 @@ main{               //Right
                 }
             }
         }
-        .sillSection{
-            h3{
-                font-size: 18px;
-                padding-top: 10px;
-                span{
-                    font-size: 12px;
+        #skillsTittle{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .skillSection{
+            display: flex;
+            .skill{
+                width: 50%;
+                padding-left: 40px;
+                ul{
+                    list-style: disc;
+                    li{
+                        margin-bottom: 5px;
+                        font-size: 20px;
+                        h3{
+                            font-size: 13px;
+                        }
+                    } 
                 }
-            }
-            .skillArticle{
-                margin-bottom: 0;
-                padding: 10px 0 10px 20px;
-                h4{
-                    font-size: 14px;
-                }
-            }
-            .skillDiv{
-                gap: 20px;
-                margin-bottom: 5px;
-            }
-            
+            }          
+        } 
+        #hardSkills{
+            border-right: 2px solid $color-brown-dark-hr; 
         }
     }
 }

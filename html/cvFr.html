@@ -40,8 +40,9 @@
                     <p><a href="mailto:martinanto96@hotmail.fr" target="_blank">martinanto96@hotmail.fr</a></p>
                 </div>
                 <div>
-                    <h3>Site Web</h3>
+                    <h3>Mon site Web</h3>
                     <p><a href="https://antomart-website.netlify.app/" target="_blank">antomart-website.netlify.app</a></p>
+                    <img src="../images/QR_code.png" alt="QR_code" id="qr_code">
                 </div>
                 <div>
                     <h3>GitHub</h3>
@@ -80,8 +81,8 @@
                 <h2>Loisir</h2>
                 <hr>
                 <div>
-                    <h3>Escalade</h3>
-                    <h3>Jogging</h3>
+                    <h3 class="interests">Escalade</h3>
+                    <h3 class="interests">Jogging</h3>
                 </div>
             </section>
         </aside>
@@ -95,23 +96,35 @@
                 <article>                       <!-- À propos de moi -->
                     <h2>À propos de moi</h2>
                     <hr>
-                    <p>
-                        Je suis actuellement en <strong>cours du soir</strong> en <strong>informatique de gestion</strong> et donc disponible à temps plein. 
-                        J'ai terminé une formation de <strong>Junior Full stack developpeur</strong> intensive de 4 mois organisée par l'ADEM et Cap4Lab. 
-                        Je souhaite acquérir de l'expérience dans le monde du travail dans le milieu informatique.</p>
+                    <p> 
+                        Actuellement engagé dans une formation de 11 semaines en <strong>développement JAVA EE</strong> organisée par l'ADEM et Cnfpc,
+                        je suis déterminé à acquérir une solide expérience professionnelle dans le domaine informatique.</p>
                 </article>
                 <article>                           <!-- Expérience professionnelle -->
                     <h2>Expérience professionnelle</h2>
                     <hr>
+                    <div>
+                        <p class="date">23/09/2024 - 06/12/2024</p>
+                        <article>
+                            <h4>JAVA EE developpeur</h4>
+                            <p><em>Cnfpc & ADEM</em></p>
+                            <p>
+                                Formation intensive de 11 semaines.<br>
+                                <strong>Back-End</strong>: MySQL, JAVA, Springboot. <br>
+                                <!-- <strong>Projet final</strong>: LastCall: github.com/Riccardocode/lastCall -->
+                            </p>
+                         </article>
+                    </div>
                     <div>
                         <p class="date">28/08/2023 - 15/12/2023</p>
                         <article>
                             <h4>Full stack web developpeur</h4>
                             <p><em>Cap4Lab & ADEM</em></p>
                             <p>
-                                Formation intensive de 4 mois. Exploration de la conception UI/UX avec Figma/Adobe XD. 
-                                Développement de compétences en <strong>Front-End</strong>: HTML5, CSS3, SASS/SCSS, JavaScript/jQuery, React/Angular/Vue.js.
-                                Développement de compétences en <strong>Back-End</strong>: MySQL, PHP, Laravel.
+                                Formation intensive de 4 mois. Exploration de la conception UI/UX avec Figma/Adobe XD. <br>
+                                <strong>Front-End</strong>: HTML5, CSS3, SASS/SCSS, JavaScript, Angular Vue.js.<br>
+                                <strong>Back-End</strong>: MySQL, PHP, Laravel.<br>
+                                <strong>Projet final</strong>: LastCall - github.com/Riccardocode/lastCall
                             </p>
                          </article>
                     </div>
@@ -120,15 +133,16 @@
                     <h2>Etudes - Formations</h2>
                     <hr>
                     <div>
-                        <p class="date">Juillet</p>
+                        <p class="date">Juillet 2024</p>
                         <article>
-                            <h4>Les bases du développement web DJANGO</h4>
-                            <h4>Introduction au développement web FLASK avec Python</h4>
+                            <h4>Les bases du développement web DJANGO</h4><p>
+                            <h4>Introduction au développement web FLASK avec Python</h4><p>
                             <h4>Introduction à la programmation COBOL</h4>
+                            <p><em>DLH (Digital Learning Hub), Esch-Belval</em></p>
                          </article>
                      </div>
                     <div>
-                        <p class="date">2018 - présent</p>
+                        <p class="date">2018 - Present</p>
                         <article>
                             <h4>Bachelier en informatique de gestion</h4>
                             <p><em>EAFC Sud-Luxembourg (Établissement d'Enseignement pour Adultes et de Formation Continue), Arlon</em></p>
@@ -149,40 +163,37 @@
                         </article>
                     </div>
                 </article>
-                <article>                            <!-- Projet personnel-->
-                    <h2>Projet personnel</h2>
+                <article>                            <!-- Skills-->
+                    <div id="skillsTittle">
+                        <h2>Hard skills</h2>
+                        <h2>Soft skills</h2>
+                    </div>
                     <hr>
-                    <section class="sillSection" >
-                        <h3>Front-end</h3>
-                        <article class="skillArticle">
-                            <div class="skillDiv" >
-                                <h4>Mon Site</h4>
-                                <p>github.com/antomart96/antomartWebsite</p>  
-                            </div>
-                            <p>
-                                <em>Après un mois et demi d'apprentissage, j'ai réussi à créer mon propre site web, 
-                                conçu pour s'adapter à divers appareil mulitmédias, 
-                                en utilisant <strong>HTML</strong>, <strong>SCSS</strong> et <strong>JavaScript</strong>.</em>
-                            </p>
-                        </article>
-                    </section>
-                    <section class="sillSection">
-                        <h3>Full-stack</h3>
-                        <article class="skillArticle">
-                            <div class="skillDiv" >
-                                <h4>LastCall</h4>
-                                <p>github.com/Riccardocode/lastCall</p>  
-                            </div>
-                            <p>
-                                <em>
-                                    Projet final d'une formation intensive de 4 mois en développement web Full Stack,
-                                    utilisant  <strong>Laravel</strong> comme  framework(<strong>PHP</strong>) pour la partie <strong>Back-End</strong>.
-                                    <strong>HTML</strong>, <strong>SCSS</strong>, et <strong>JavaScript</strong> ont été utilisés pour le <strong>Front-End</strong>.
-                                    Implémentation d'<strong>API</strong> et d'une base de données <strong>SQL</strong> à l'aide de  <strong>Docker</strong> et <strong>XAMPP</strong>. 
-                                </em>
-                            </p>
-                        </article>
-                    </section>
+                    <div class="skillSection">
+                        <section class="skill" id="hardSkills">      <!-- Hard skills-->
+                            <ul>
+                               
+                                <li><h3>Css, SASS/SCSS</h3></li>
+                                <li><h3>Javascript</h3></li>
+                                <li><h3>Angular</h3></li>
+                                <li><h3>PHP</h3></li>
+                                <li><h3>Laravel</h3></li>
+                                <li><h3>JAVA</h3></li>
+                                <li><h3>Spring Boot</h3></li>
+                                <li><h3>SQL</h3></li>
+                            </ul>
+                        </section>
+                        <section class="skill" id="softSkills">       <!-- Soft skills-->
+                            <ul>
+                                <li><h3>Travail en équipe</h3></li>
+                                <li><h3>Communication</h3></li>
+                                <li><h3>Gestion du temps</h3></li>
+                                <li><h3>Gestion du stress</h3></li>
+                                <li><h3>Team work</h3></li>
+                            </ul>
+                        </section>
+                    </div>
+             
                 </article>
             </section>
         </main>

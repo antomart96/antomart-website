@@ -58,7 +58,6 @@ aside {
   background-color: #E5DCCA;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 aside #profilImg {
   overflow: hidden;
@@ -69,7 +68,10 @@ aside #profilImg img {
   height: auto;
 }
 aside #asideSection-1 {
-  padding: 0px 0px 15px 15px;
+  padding: 0px 40px 0px 40px;
+}
+aside #asideSection-1 #qr_code {
+  width: 27%;
 }
 aside #asideSection-1 h2 {
   font-size: 18px;
@@ -88,6 +90,9 @@ aside #asideSection-1 div.langue {
   padding-right: 30px;
   display: flex;
   justify-content: space-between;
+}
+aside #asideSection-1 div .interests {
+  padding-bottom: 5px;
 }
 aside #asideSection-1 div h3 {
   padding-top: 5px;
@@ -113,10 +118,10 @@ main header {
   padding: 40px;
 }
 main #mainSection {
-  padding: 25px 30px;
+  padding: 20px 30px;
 }
 main #mainSection article {
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 main #mainSection article h2 {
   font-size: 18px;
@@ -150,23 +155,30 @@ main #mainSection article .skillsPart article {
   flex-basis: 50%;
   padding: 5px;
 }
-main #mainSection .sillSection h3 {
-  font-size: 18px;
-  padding-top: 10px;
+main #mainSection #skillsTittle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-main #mainSection .sillSection h3 span {
-  font-size: 12px;
+main #mainSection .skillSection {
+  display: flex;
 }
-main #mainSection .sillSection .skillArticle {
-  margin-bottom: 0;
-  padding: 10px 0 10px 20px;
+main #mainSection .skillSection .skill {
+  width: 50%;
+  padding-left: 40px;
 }
-main #mainSection .sillSection .skillArticle h4 {
-  font-size: 14px;
+main #mainSection .skillSection .skill ul {
+  list-style: disc;
 }
-main #mainSection .sillSection .skillDiv {
-  gap: 20px;
+main #mainSection .skillSection .skill ul li {
   margin-bottom: 5px;
+  font-size: 20px;
+}
+main #mainSection .skillSection .skill ul li h3 {
+  font-size: 13px;
+}
+main #mainSection #hardSkills {
+  border-right: 2px solid rgba(67, 42, 22, 0.1764705882);
 }
 
 @media print {

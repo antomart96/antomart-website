@@ -42,6 +42,7 @@
                 <div>
                     <h3>Website</h3>
                     <p><a href="https://antomart-website.netlify.app/" target="_blank">antomart-website.netlify.app</a></p>
+                    <img src="../images/QR_code.png" alt="QR_code" id="qr_code">
                 </div>
                 <div>
                     <h3>GitHub</h3>
@@ -80,8 +81,8 @@
                 <h2>Interests</h2>
                 <hr>
                 <div>
-                    <h3>Climbing</h3>
-                    <h3>Running</h3>
+                    <h3 class="interests">Climbing</h3>
+                    <h3 class="interests">Running</h3>
                 </div>
             </section>
         </aside>
@@ -96,35 +97,48 @@
                     <h2>About me</h2>
                     <hr>
                     <p>
-                        I am currently attending <strong>evening classes</strong> in <strong>Business Computing</strong> and therefore available full-time. 
-                        I completed an intensive 4-month <strong>Junior Full Stack Developer</strong> training program organised by ADEM and Cap4Lab.
-                        I wish to gain work experience in the field of IT.</p>
+                        I'm currently on an 11-week training course in <strong>JAVA EE development</strong>, organised by ADEM and Cnfpc, 
+                        and I'm determined to gain solid professional experience in the IT field.</p>
                 </article>
                 <article>                         <!-- Work experience -->
                     <h2>Work experience</h2>
                     <hr>
                     <div>
+                        <p class="date">23/09/2024 - 06/12/2024</p>
+                        <article>
+                            <h4>JAVA EE developer</h4>
+                            <p><em>Cnfpc & ADEM</em></p>
+                            <p>
+                                Intensive trainning for 11 weeks.<br>
+                                <strong>Back-End</strong>: MySQL, JAVA, Springboot. <br>
+                                <!-- <strong>Projet final</strong>: LastCall: github.com/Riccardocode/lastCall -->
+                            </p>
+                         </article>
+                    </div>
+                    <div>
                         <p class="date">28/08/2023 - 15/12/2023</p>
                         <article>
-                            <h4>Full stack web developpeur</h4>
+                            <h4>Full stack web developer</h4>
                             <p><em>Cap4Lab & ADEM</em></p>
                             <p>
-                                4 months intensive Bootcamp. Exploring UI/UX design with Figma/Adobe XD.
-                                Building skills in <strong>Front-End</strong>: HTML5, CSS3, SASS/SCSS, JavaScript/jQuery, React/Angular/Vue.js. 
-                                Exploring <strong>Back-End</strong> development: MySQL, PHP, Laravel.
+                                4 months intensive Bootcamp. Exploring UI/UX design with Figma/Adobe XD. <br>
+                                <strong>Front-End</strong>: HTML5, CSS3, SASS/SCSS, JavaScript, Angular Vue.js.<br>
+                                <strong>Back-End</strong>: MySQL, PHP, Laravel.<br>
+                                <strong>Final project</strong>: LastCall - github.com/Riccardocode/lastCall
                             </p>
                         </article>
                     </div>
                 </article>
                 <article>                        <!-- School Qualifications -->
-                    <h2>Education - Formations</h2>
+                    <h2>Education - Trainings</h2>
                     <hr>
                     <div>
-                        <p class="date">July</p>
+                        <p class="date">July 2024</p>
                         <article>
                             <h4>Foundations of DJANGO Web Development</h4>
                             <h4>Introduction to FLASK Web Development with Python</h4>
                             <h4>Introduction to COBOL Programming</h4>
+                            <p><em>DLH (Digital Learning Hub), Esch-Belval</em></p>
                          </article>
                      </div>
                     <div>
@@ -149,40 +163,36 @@
                          </article>
                      </div>
                 </article>
-                <article>    <!-- personal project-->
-                    <h2>Personal project</h2>
+                <article>    <!-- Skills-->
+                    <div id="skillsTittle">
+                        <h2>Hard skills</h2>
+                        <h2>Soft skills</h2>
+                    </div>
                     <hr>
-                    <section class="sillSection" >
-                        <h3>Front-end</h3>
-                        <article class="skillArticle">
-                            <div class="skillDiv" >
-                                <h4>My Website</h4>
-                                <p>github.com/antomart96/antomartWebsite</p>  
-                            </div>
-                            <p>
-                                <em>After a month and a half of learning, I managed to create my own website,
-                                designed to adapt to various multimedia devices,
-                                using <strong>HTML</strong>, <strong>SCSS</strong>, and <strong>JavaScript</strong>.</em>
-                            </p>
-                        </article>                  
-                    </section>
-                    <section class="sillSection">
-                        <h3>Full-stack</h3>
-                        <article class="skillArticle">
-                            <div class="skillDiv" >
-                                <h4>LastCall</h4>
-                                <p>github.com/Riccardocode/lastCall</p>  
-                            </div>
-                            <p>
-                                <em>
-                                    Final project of a 4 months intensive Full Stack Web Developer Bootcamp,
-                                     using <strong>Laravel</strong> as framework(<strong>PHP</strong>) for the  <strong>Back-End</strong> part.
-                                    <strong>HTML</strong>, <strong>SCSS</strong>, and <strong>JavaScript</strong> for the  <strong>Front-End</strong>.
-                                    Implemented <strong>API</strong> and <strong>SQL</strong> database using <strong>Docker</strong> and <strong>XAMPP</strong>.
-                                </em>
-                            </p>
-                        </article>
-                    </section>
+                    <div class="skillSection">
+                        <section class="skill" id="hardSkills">      <!-- Hard skills-->
+                            <ul>
+                               
+                                <li><h3>Css, SASS/SCSS</h3></li>
+                                <li><h3>Javascript</h3></li>
+                                <li><h3>Angular</h3></li>
+                                <li><h3>PHP</h3></li>
+                                <li><h3>Laravel</h3></li>
+                                <li><h3>JAVA</h3></li>
+                                <li><h3>Spring Boot</h3></li>
+                                <li><h3>SQL</h3></li>
+                            </ul>
+                        </section>
+                        <section class="skill" id="softSkills">       <!-- Soft skills-->
+                            <ul>
+                                <li><h3>Team work</h3></li>
+                                <li><h3>Communication</h3></li>
+                                <li><h3>Time mangement</h3></li>
+                                <li><h3>Stress mangement</h3></li>
+                                <li><h3>Team work</h3></li>
+                            </ul>
+                        </section>
+                    </div>
                 </article>
             </section>
         </main>
