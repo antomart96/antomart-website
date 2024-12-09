@@ -54,7 +54,6 @@ button:hover {
 
 aside {
   width: 35%;
-  height: 100%;
   background-color: #E5DCCA;
   display: flex;
   flex-direction: column;
@@ -115,13 +114,13 @@ main {
 }
 main header {
   background-color: rgba(229, 220, 202, 0.9058823529);
-  padding: 40px;
+  padding: 30px 40px;
 }
 main #mainSection {
   padding: 20px 30px;
 }
 main #mainSection article {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 main #mainSection article h2 {
   font-size: 18px;
@@ -145,6 +144,9 @@ main #mainSection article div article {
 main #mainSection article div article h4 {
   font-size: 12px;
   padding-bottom: 5px;
+}
+main #mainSection article div #certif {
+  padding-left: 17px;
 }
 main #mainSection article .skillsPart {
   display: flex;
@@ -176,6 +178,9 @@ main #mainSection .skillSection .skill ul li {
 }
 main #mainSection .skillSection .skill ul li h3 {
   font-size: 13px;
+}
+main #mainSection #java8Oja {
+  width: 16%;
 }
 main #mainSection #hardSkills {
   border-right: 2px solid rgba(67, 42, 22, 0.1764705882);
