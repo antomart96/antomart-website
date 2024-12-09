@@ -76,7 +76,7 @@ aside{              //LEFT
         }
         hr{
             border: 1px solid $color-brown-dark-hr;
-
+            background-color: $color-brown-dark-hr;                  
             margin-top: 10px;
             margin-bottom: 15px;
         }
@@ -125,6 +125,7 @@ main{               //Right
             hr{
                 margin: 15px 0px;
                 border: 1px solid $color-brown-dark-hr;
+                background-color: $color-brown-dark-hr; 
             }
             p{
                 font-size: 12px;

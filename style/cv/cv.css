@@ -78,6 +78,7 @@ aside #asideSection-1 h2 {
 }
 aside #asideSection-1 hr {
   border: 1px solid rgba(67, 42, 22, 0.1764705882);
+  background-color: rgba(67, 42, 22, 0.1764705882);
   margin-top: 10px;
   margin-bottom: 15px;
 }
@@ -128,6 +129,7 @@ main #mainSection article h2 {
 main #mainSection article hr {
   margin: 15px 0px;
   border: 1px solid rgba(67, 42, 22, 0.1764705882);
+  background-color: rgba(67, 42, 22, 0.1764705882);
 }
 main #mainSection article p {
   font-size: 12px;
